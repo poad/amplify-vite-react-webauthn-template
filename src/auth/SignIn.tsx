@@ -6,9 +6,12 @@ import {
   Label,
   Text,
   Alert,
+  RadioGroupField,
+  Radio,
 } from '@aws-amplify/ui-react';
 import { confirmSignIn, ConfirmSignInOutput, signIn, SignInOutput } from 'aws-amplify/auth';
 import { JSX, useState } from 'react';
+import { Switch, Match } from '../flow';
 import './SignIn.css';
 
 export function SignIn(props: {
@@ -16,26 +19,30 @@ export function SignIn(props: {
   onError?: (error: Error) => void
 }): JSX.Element {
 
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [otp, setOtp] = useState('');
   const [error, setError] = useState<Error | undefined>();
+  const [flow, setFlow] = useState('email');
   const [signResult, setSignResult] = useState<SignInOutput | undefined>();
 
-  async function handleClick() {
-    if (username.length === 0) {
+  async function handleClickNext() {
+    if (email.length === 0) {
       return;
     }
-    setUsername('');
+    setEmail('');
+    setOtp('');
+    setError(undefined);
 
     try {
       const result = await signIn({
-        username,
+        username: email,
         options: {
           authFlowType: 'USER_AUTH',
-          preferredChallenge: 'WEB_AUTHN',
+          preferredChallenge: flow === 'email' ? 'EMAIL_OTP' : 'WEB_AUTHN',
         },
       });
-      console.log(result.nextStep.signInStep);
       setSignResult(result);
+
       if (
         result.nextStep.signInStep === 'CONTINUE_SIGN_IN_WITH_FIRST_FACTOR_SELECTION'
       ) {
@@ -50,11 +57,32 @@ export function SignIn(props: {
           setError(undefined);
           props.onSignedIn?.(result);
         }
-      } else if (result.nextStep.signInStep === 'DONE') {
-        setError(undefined);
-        props.onSignedIn?.(result);
       }
     } catch (e: unknown) {
+      setError(e as Error);
+      props.onError?.(e as Error);
+    }
+  }
+
+  async function handleClickSignIn() {
+    const input = otp;
+    if (input.length === 0) {
+      setError(() => new Error('Confirmation Code is must not be empty.'));
+      return;
+    }
+
+    setOtp('');
+    setError(undefined);
+
+    try {
+      const result = await confirmSignIn({
+        challengeResponse: input,
+      });
+      setSignResult(result);
+      if (result.nextStep.signInStep === 'DONE') {
+        props.onSignedIn?.(result);
+      }
+    } catch (e) {
       setError(e as Error);
       props.onError?.(e as Error);
     }
@@ -63,37 +91,67 @@ export function SignIn(props: {
   return (
     <View>
       <Flex direction="column" gap="small">
-        {
-          signResult?.nextStep.signInStep === 'CONTINUE_SIGN_IN_WITH_FIRST_FACTOR_SELECTION' ?
-            (
-              <>
+        <Switch fallback={
+          <>
+            <Label htmlFor="email" className="pr-1">
+              Email
+              <Text as="span" fontSize="small" color="font.error">
+                {' '}
+                (required)
+              </Text>
+            </Label>
+            <Input
+              id="email"
+              type="email"
+              value={email}
+              onInput={(e) => setEmail(e.currentTarget.value)}
+              isRequired
+            />
+            <RadioGroupField
+              legend="Auth Type"
+              name="type"
+              direction="row"
+              value={flow}
+              onChange={(e) => setFlow(e.target.value)}
+            >
+              <Radio value="email">Email</Radio>
+              <Radio value="passkey">PassKey</Radio>
 
-              </>
-            ) :
-            (
-              <>
-                <Label htmlFor="username" className="pr-1">
-                  Email
-                  <Text as="span" fontSize="small" color="font.error">
-                    {' '}
-                    (required)
-                  </Text>
-                </Label>
-                <Input
-                  id="username"
-                  type="email"
-                  value={username}
-                  onInput={(e) => setUsername(e.currentTarget.value)}
-                  isRequired
-                />
-                <Button
-                  onClick={handleClick}
-                >
-                  Sign in
-                </Button>
-              </>
-            )
-        }
+            </RadioGroupField>
+            <Button
+              onClick={handleClickNext}
+            >
+              Next
+            </Button>
+          </>
+        }>
+          <Match when={signResult?.nextStep.signInStep === 'DONE'}>
+            <></>
+          </Match>
+          <Match when={signResult?.nextStep.signInStep === 'CONFIRM_SIGN_IN_WITH_EMAIL_CODE'}>
+            <>
+              <Label htmlFor="otp" className="pr-1">
+                One Time Password
+                <Text as="span" fontSize="small" color="font.error">
+                  {' '}
+                  (required)
+                </Text>
+              </Label>
+              <Input
+                id="otp"
+                type="text"
+                value={otp}
+                onInput={(e) => setOtp(e.currentTarget.value)}
+                isRequired
+              />
+              <Button
+                onClick={handleClickSignIn}
+              >
+                Sign In
+              </Button>
+            </>
+          </Match>
+        </Switch>
         {
           error ? <Alert variation="error">{error.message}</Alert> : <></>
         }
