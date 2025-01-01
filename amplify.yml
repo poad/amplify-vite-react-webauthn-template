@@ -1,9 +1,14 @@
 version: 1
 backend:
   phases:
+    preBuild:
+      commands:
+        # corepack のインストールと有効化
+        - npm -g i corepack
+        - corepack enable
     build:
       commands:
-        - npm ci --cache .npm --prefer-offline
+        - pnpm install --no-frozen-lockfile
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
   phases:
@@ -15,9 +20,9 @@ frontend:
         # Bunをインストール
         - curl -fsSL https://bun.sh/install | bash
         - source /root/.bashrc
-        - bun install
     build:
       commands:
+        - pnpm install --no-frozen-lockfile
         - bun run --bun build
   artifacts:
     baseDirectory: dist
