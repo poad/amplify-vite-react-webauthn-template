@@ -6,8 +6,25 @@ import SignIn from './SignIn';
 import { SignUp } from './SignUp';
 import { Show } from '../flow';
 import { RegisterWebAuthn } from './RegisterWebAuthn';
-// import { ListRegisterdWebAuthn } from './ListRegisterdWebAuthn';
 
+/**
+ * Authコンポーネント - AWS Amplifyを使用した認証UI
+ *
+ * 認証状態に応じて以下の機能を提供します：
+ * - 未認証時：サインインとサインアップのタブ付きフォーム
+ * - 認証済み時：サインアウトボタンとWebAuthn（PassKey）登録機能
+ *
+ * すべての認証フローをカプセル化し、アプリケーションの認証UIとして機能します。
+ * タブベースのインターフェースにより、ユーザーは簡単にサインインとサインアップを
+ * 切り替えることができます。
+ *
+ * @component
+ *
+ * @example
+ * ```tsx
+ * <Auth />
+ * ```
+ */
 export function Auth() {
   const { isSignedIn } = useAuth();
   const [tab, setTab] = useState('signin');
@@ -17,7 +34,6 @@ export function Auth() {
       <Flex direction="column" gap="small">
         <SignOutButton />
         <RegisterWebAuthn />
-        {/* <ListRegisterdWebAuthn /> */}
       </Flex>
     }>
       <Card style={{
