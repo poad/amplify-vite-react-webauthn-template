@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import useAuth from './hooks';
 import SignOutButton from './SignOutButton';
-import { Tabs, Card, Flex } from '@aws-amplify/ui-react';
+import { Tabs, Card, Flex, useAuthenticator } from '@aws-amplify/ui-react';
 import SignIn from './SignIn';
 import { SignUp } from './SignUp';
 import { Show } from '../flow';
@@ -26,11 +25,15 @@ import { RegisterWebAuthn } from './RegisterWebAuthn';
  * ```
  */
 export function Auth() {
-  const { isSignedIn } = useAuth();
+  const {
+    authStatus,
+  } = useAuthenticator((context) => [
+    context.authStatus,
+  ]);
   const [tab, setTab] = useState('signin');
 
   return (
-    <Show when={!isSignedIn} fallback={
+    <Show when={authStatus !== 'authenticated'} fallback={
       <Flex direction="column" gap="small">
         <SignOutButton />
         <RegisterWebAuthn />

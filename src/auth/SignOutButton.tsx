@@ -1,6 +1,5 @@
-import { Button } from '@aws-amplify/ui-react';
+import { Button, useAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-import useAuth from './hooks';
 import { JSX } from 'react';
 import { Show } from '../flow';
 
@@ -20,10 +19,17 @@ import { Show } from '../flow';
  * ```
  */
 export function SignOutButton(props: { onSignOut?: () => void }): JSX.Element {
-  const { isSignedIn, signOut } = useAuth();
+  const {
+    authStatus,
+    signOut,
+  } = useAuthenticator((context) => [
+    context.authStatus,
+    context.signOut,
+  ]);
+
 
   return (
-    <Show when={isSignedIn} fallback={<></>}>
+    <Show when={authStatus === 'authenticated'} fallback={<></>}>
       <Button
         onClick={() => {
           signOut({ global: true });
