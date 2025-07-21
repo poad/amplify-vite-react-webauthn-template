@@ -1,3 +1,6 @@
 packages:
-  - '.'
-  - './amplify'
+  - .
+  - ./amplify
+
+onlyBuiltDependencies:
+  - esbuild
