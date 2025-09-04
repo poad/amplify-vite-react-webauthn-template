@@ -3,4 +3,7 @@ packages:
   - ./amplify
 
 onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - core-js
   - esbuild
+  - unrs-resolver
