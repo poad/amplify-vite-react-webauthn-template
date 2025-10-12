@@ -6,10 +6,10 @@ import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import importPlugin from 'eslint-plugin-import';
-import pluginPromise from 'eslint-plugin-promise'
+import pluginPromise from 'eslint-plugin-promise';
 import reactRefresh from "eslint-plugin-react-refresh";
 
-import tseslint from 'typescript-eslint';
+import { configs, parser } from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 
 import { includeIgnoreFile } from '@eslint/compat';
@@ -36,8 +36,8 @@ export default defineConfig(
     ],
   },
   eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
+  ...configs.strict,
+  ...configs.stylistic,
   // @ts-ignore
   pluginPromise.configs['flat/recommended'],
   reactHooks.configs.flat.recommended,
@@ -54,7 +54,7 @@ export default defineConfig(
       globals: {
         ...globals.browser,
       },
-      parser: tseslint.parser,
+      parser,
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
