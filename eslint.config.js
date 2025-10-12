@@ -1,6 +1,7 @@
 // @ts-check
 
 import globals from 'globals';
+import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import react from 'eslint-plugin-react';
@@ -23,7 +24,7 @@ const gitignorePath = path.resolve(__dirname, "./.gitignore");
 
 const compat = new FlatCompat();
 
-export default tseslint.config(
+export default defineConfig(
   includeIgnoreFile(gitignorePath),
   {
     ignores: [
