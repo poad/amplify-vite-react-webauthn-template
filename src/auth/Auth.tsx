@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import SignOutButton from './SignOutButton';
+import { SignOutButton } from './SignOutButton';
 import { Tabs, Card, Flex, useAuthenticator } from '@aws-amplify/ui-react';
-import SignIn from './SignIn';
+import { SignIn } from './SignIn';
 import { SignUp } from './SignUp';
 import { Show } from '../flow';
 import { RegisterWebAuthn } from './RegisterWebAuthn';

@@ -1,12 +1,10 @@
-// @ts-check
-
 import globals from 'globals';
 import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import react from 'eslint-plugin-react';
-import reactHooksPlugin from 'eslint-plugin-react-hooks';
-import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
+import reactHooks from 'eslint-plugin-react-hooks';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 import importPlugin from 'eslint-plugin-import';
 import pluginPromise from 'eslint-plugin-promise'
 import reactRefresh from "eslint-plugin-react-refresh";
@@ -42,13 +40,11 @@ export default defineConfig(
   ...tseslint.configs.stylistic,
   // @ts-ignore
   pluginPromise.configs['flat/recommended'],
-  reactHooksPlugin.configs.flat.recommended,
+  reactHooks.configs.flat.recommended,
   reactRefresh.configs.recommended,
-  jsxA11yPlugin.flatConfigs.recommended,
+  jsxA11y.flatConfigs.recommended,
   {
     files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
-    ...importPlugin.flatConfigs.recommended,
-    ...importPlugin.flatConfigs.typescript,
     languageOptions: {
       parserOptions: {
         ecmaFeatures: {
@@ -62,6 +58,10 @@ export default defineConfig(
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
+    extends: [
+      importPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.typescript,
+    ],
     settings: {
       react: {
         version: 'detect',
@@ -82,16 +82,6 @@ export default defineConfig(
       react,
     },
     rules: {
-      'react/jsx-uses-react': 'off',
-      'react/jsx-uses-vars': 'off',
-      'react/require-render-return': 'off',
-      'react/display-name': 'off',
-      'react/no-direct-mutation-state': 'off',
-      'react/no-string-refs': 'off',
-      'react/jsx-no-undef': 'off',
-      'import/namespace': 'off',
-      'import/no-named-as-default': 'off',
-      'import/no-named-as-default-member': 'off',
       '@stylistic/indent': ['error', 2],
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
