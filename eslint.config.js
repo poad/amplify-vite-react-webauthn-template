@@ -6,7 +6,6 @@ import stylistic from '@stylistic/eslint-plugin';
 import react from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
-// @ts-ignore
 import importPlugin from 'eslint-plugin-import';
 import pluginPromise from 'eslint-plugin-promise'
 import reactRefresh from "eslint-plugin-react-refresh";
@@ -40,8 +39,11 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
+  // @ts-ignore
   pluginPromise.configs['flat/recommended'],
+  reactHooksPlugin.configs.flat.recommended,
   reactRefresh.configs.recommended,
+  jsxA11yPlugin.flatConfigs.recommended,
   {
     files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
     ...importPlugin.flatConfigs.recommended,
@@ -76,20 +78,8 @@ export default tseslint.config(
     },
     plugins: {
       '@stylistic': stylistic,
-      '@stylistic/ts': stylistic,
-      '@stylistic/jsx': stylistic,
       react,
-      'jsx-a11y': jsxA11yPlugin,
-      'react-hooks': reactHooksPlugin,
     },
-    extends: [
-      // @ts-ignore
-      ...compat.config(jsxA11yPlugin.configs.recommended),
-
-      ...tseslint.configs.strict,
-      ...tseslint.configs.stylistic,
-    ],
-    // @ts-ignore
     rules: {
       'react/jsx-uses-react': 'off',
       'react/jsx-uses-vars': 'off',
@@ -101,8 +91,7 @@ export default tseslint.config(
       'import/namespace': 'off',
       'import/no-named-as-default': 'off',
       'import/no-named-as-default-member': 'off',
-      '@stylistic/ts/indent': ['error', 2],
-      '@stylistic/jsx/jsx-indent': ['error', 2],
+      '@stylistic/indent': ['error', 2],
       '@stylistic/semi': ['error', 'always'],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/arrow-parens': ['error', 'always'],
