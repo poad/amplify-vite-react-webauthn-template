@@ -12913,7 +12913,7 @@ snapshots:
   graphql-tag@2.12.6(graphql@15.10.1):
     dependencies:
       graphql: 15.10.1
-      tslib: 2.6.3
+      tslib: 2.3.1
 
   graphql-transformer-common@4.34.0:
     dependencies:
@@ -13352,7 +13352,7 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.4.1
 
   lower-case@2.0.2:
     dependencies:
