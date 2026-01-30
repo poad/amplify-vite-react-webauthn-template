@@ -642,8 +642,8 @@ packages:
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0':
     resolution: {integrity: sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==}
 
-  '@aws-cdk/aws-service-spec@0.1.145':
-    resolution: {integrity: sha512-K8wuT0J3A8qq2N1gzlFGjzIHzZNahuMDkuICe8EWLtaFVr4WpgLgjavbmWIC7n3uItJ9dSHwygoCTu4O0vJScw==}
+  '@aws-cdk/aws-service-spec@0.1.146':
+    resolution: {integrity: sha512-hVZUNk4N5Ij3iOU4WtWB8tailwrR2GLvgB642FipW+7Ev06IIwVFuaG80WZld/9SDpqUI6ZfjnBWh295DxaK2Q==}
 
   '@aws-cdk/cdk-assets-lib@1.2.1':
     resolution: {integrity: sha512-aEf6Em1FLrj4YoDon0YoXjTgBISAK77v/SuOMvbnpUdp9v0ZwBlERz5avHnQB6tdTYZwuZ9oHqJezRQFtMu2yw==}
@@ -700,8 +700,8 @@ packages:
   '@aws-cdk/service-spec-types@0.0.198':
     resolution: {integrity: sha512-oksZShBGTW/W7HnsnWU3N/YZGkWCbZ/4naFwYYVbXNfpTLauz5ME94SQwyHWG7U7ohjN57JR8DvdGfHVs6PTzg==}
 
-  '@aws-cdk/service-spec-types@0.0.211':
-    resolution: {integrity: sha512-iVaAS58D50/i2TQxK5DVAjEoTyWwi0vtEoaBs6HWcW6JLuDZmf+zY+cVWzARkbzeV7jP6/wg1IUxLOO793vRUw==}
+  '@aws-cdk/service-spec-types@0.0.212':
+    resolution: {integrity: sha512-Pmz/IkggLke5RuySv0RuBah4cZPOr47NdbE0yeWIH8ty1KHNjBqzRdp/EK8pMY2+xPm+si4RzZgP5M0x7FXGUw==}
 
   '@aws-cdk/toolkit-lib@1.6.1':
     resolution: {integrity: sha512-EJlek1OwIsPZ0JJXNnXnQlFqJcbBVrxEPU1mDpgh3EPJmwRX0vAButju1BptRb1q3tHDCShnzfhGFTvDLqA9UQ==}
@@ -3835,8 +3835,8 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
-  ci-info@4.3.1:
-    resolution: {integrity: sha512-Wdy2Igu8OcBpI2pZePZ5oWjPC38tmDVx5WKUXKwlLYkA0ozo85sLsLvkBbBn/sZaSCMFOGZJ14fvW9t5/d7kdA==}
+  ci-info@4.4.0:
+    resolution: {integrity: sha512-77PSwercCZU2Fc4sX94eF8k8Pxte6JAwL4/ICZLFjJLqegs7kCuAsqqj/70NQF6TvDpgFjkubQB2FW2ZZddvQg==}
     engines: {node: '>=8'}
 
   cli-cursor@3.1.0:
@@ -4071,8 +4071,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.279:
-    resolution: {integrity: sha512-0bblUU5UNdOt5G7XqGiJtpZMONma6WAfq9vsFmtn9x1+joAObr6x1chfqyxFSDCAFwFhCQDrqeAr6MYdpwJ9Hg==}
+  electron-to-chromium@1.5.282:
+    resolution: {integrity: sha512-FCPkJtpst28UmFzd903iU7PdeVTfY0KAeJy+Lk0GLZRwgwYHn/irRcaCbQQOmr5Vytc/7rcavsYLvTM8RiHYhQ==}
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -7161,9 +7161,9 @@ snapshots:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0': {}
 
-  '@aws-cdk/aws-service-spec@0.1.145':
+  '@aws-cdk/aws-service-spec@0.1.146':
     dependencies:
-      '@aws-cdk/service-spec-types': 0.0.211
+      '@aws-cdk/service-spec-types': 0.0.212
       '@cdklabs/tskb': 0.0.4
 
   '@aws-cdk/cdk-assets-lib@1.2.1':
@@ -7202,7 +7202,7 @@ snapshots:
 
   '@aws-cdk/cloudformation-diff@2.185.1(@aws-sdk/client-cloudformation@3.978.0)':
     dependencies:
-      '@aws-cdk/aws-service-spec': 0.1.145
+      '@aws-cdk/aws-service-spec': 0.1.146
       '@aws-cdk/service-spec-types': 0.0.198
       '@aws-sdk/client-cloudformation': 3.978.0
       chalk: 4.1.2
@@ -7223,7 +7223,7 @@ snapshots:
     dependencies:
       '@cdklabs/tskb': 0.0.4
 
-  '@aws-cdk/service-spec-types@0.0.211':
+  '@aws-cdk/service-spec-types@0.0.212':
     dependencies:
       '@cdklabs/tskb': 0.0.4
 
@@ -12784,7 +12784,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.9.19
       caniuse-lite: 1.0.30001766
-      electron-to-chromium: 1.5.279
+      electron-to-chromium: 1.5.282
       node-releases: 2.0.27
       update-browserslist-db: 1.2.3(browserslist@4.28.1)
 
@@ -12932,7 +12932,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  ci-info@4.3.1: {}
+  ci-info@4.4.0: {}
 
   cli-cursor@3.1.0:
     dependencies:
@@ -13137,7 +13137,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.279: {}
+  electron-to-chromium@1.5.282: {}
 
   emoji-regex@10.6.0: {}
 
@@ -13952,7 +13952,7 @@ snapshots:
 
   is-ci@4.1.0:
     dependencies:
-      ci-info: 4.3.1
+      ci-info: 4.4.0
 
   is-core-module@2.16.1:
     dependencies:
