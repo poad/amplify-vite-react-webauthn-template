@@ -17,7 +17,7 @@ importers:
     dependencies:
       '@aws-amplify/ui-react':
         specifier: ^6.13.2
-        version: 6.13.2(@aws-amplify/core@6.16.0)(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(aws-amplify@6.16.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(xstate@4.38.3)
+        version: 6.13.2(@aws-amplify/core@6.16.0)(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(aws-amplify@6.16.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(xstate@4.38.3)
       '@eslint/compat':
         specifier: ^2.0.2
         version: 2.0.2(eslint@9.39.2(jiti@2.6.1))
@@ -33,7 +33,7 @@ importers:
     devDependencies:
       '@aws-amplify/backend':
         specifier: ^1.20.0
-        version: 1.20.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@4.3.6)
+        version: 1.20.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@4.3.6)
       '@aws-amplify/backend-cli':
         specifier: ^1.8.2
         version: 1.8.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3)
@@ -50,11 +50,11 @@ importers:
         specifier: ^5.7.1
         version: 5.7.1(eslint@9.39.2(jiti@2.6.1))
       '@types/react':
-        specifier: ^19.2.10
-        version: 19.2.10
+        specifier: ^19.2.11
+        version: 19.2.11
       '@types/react-dom':
         specifier: ^19.2.3
-        version: 19.2.3(@types/react@19.2.10)
+        version: 19.2.3(@types/react@19.2.11)
       '@vitejs/plugin-react':
         specifier: ^5.1.3
         version: 5.1.3(vite@7.3.1(jiti@2.6.1)(tsx@4.21.0))
@@ -643,8 +643,8 @@ packages:
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0':
     resolution: {integrity: sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==}
 
-  '@aws-cdk/aws-service-spec@0.1.147':
-    resolution: {integrity: sha512-Jf86gyJPjCOXU5h3+2JjPXRas0rR7DziRK5mZkBsqbUeqyDd9hWC2WgeD6SPoa/hLDxDlUrZE1TsISxjZSHOVg==}
+  '@aws-cdk/aws-service-spec@0.1.148':
+    resolution: {integrity: sha512-UkEh6yl5VruBg4r0sIV4S5jvhA+jm3vlZFeBjGfWjCdSEsOWTzK7Lhbg6+cjf35uGvNCSVdMbHC6g7tiuhSKYQ==}
 
   '@aws-cdk/cdk-assets-lib@1.2.1':
     resolution: {integrity: sha512-aEf6Em1FLrj4YoDon0YoXjTgBISAK77v/SuOMvbnpUdp9v0ZwBlERz5avHnQB6tdTYZwuZ9oHqJezRQFtMu2yw==}
@@ -694,8 +694,8 @@ packages:
   '@aws-cdk/service-spec-types@0.0.198':
     resolution: {integrity: sha512-oksZShBGTW/W7HnsnWU3N/YZGkWCbZ/4naFwYYVbXNfpTLauz5ME94SQwyHWG7U7ohjN57JR8DvdGfHVs6PTzg==}
 
-  '@aws-cdk/service-spec-types@0.0.213':
-    resolution: {integrity: sha512-cZELbZm7q9zxwrWpcUmlFGL2MT8eVB6Yl0U4Qpj2wYJ+AlMPLozf+pTz/3kuzA40qAjixk05Xjpe+Ythw8wSMQ==}
+  '@aws-cdk/service-spec-types@0.0.214':
+    resolution: {integrity: sha512-mVAnTNSd+iooBSwnCB6xzlu9pqqXlrpwzSPVigk3JImXQlzIkMf1Kx14Td3ybUNRJdmvf5bnJN3xBI6H3V54pg==}
 
   '@aws-cdk/toolkit-lib@1.6.1':
     resolution: {integrity: sha512-EJlek1OwIsPZ0JJXNnXnQlFqJcbBVrxEPU1mDpgh3EPJmwRX0vAButju1BptRb1q3tHDCShnzfhGFTvDLqA9UQ==}
@@ -726,40 +726,40 @@ packages:
   '@aws-crypto/util@5.2.0':
     resolution: {integrity: sha512-4RkU9EsI6ZpBve5fseQlGNUWKMa1RLPQ1dnjnQoe07ldfIzcsGb5hC5W0Dm7u423KWzawlrpbjXBrXCEv9zazQ==}
 
-  '@aws-sdk/client-amplify@3.982.0':
-    resolution: {integrity: sha512-t20ndB6WwQ0ZvoeKaXUnDj6lW8affmhGfLaK388J6lnS80YiSqJjghLPW+dbnlzX8dE6cNXrxQl8dKqPz5WDPQ==}
+  '@aws-sdk/client-amplify@3.983.0':
+    resolution: {integrity: sha512-+HVSwk3iQyoeSihUVv9S1g/jlhjiYZ2GVQGz0dCvxGChC6CDqWu6UxGUdT6s3WJcnEZqswW7l+7vU7Pf/VX8RQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-amplifyuibuilder@3.982.0':
-    resolution: {integrity: sha512-/LX5RDl0WI3o4RH3XnJKI1yJtGfoUpVC2GqO0mV+qiTNvwCTDxrJmOyj+DXovTMN5mGa9H5F9MaNKwlG15r8mw==}
+  '@aws-sdk/client-amplifyuibuilder@3.983.0':
+    resolution: {integrity: sha512-dUvRSruPHvETTBgiIVaLEcuumC/zE0qD0uOy/t4WUgqgG0Xzr2GqXrB74TD5ym6H+vPLGZZcL2Ps27l0uSycRg==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-appsync@3.982.0':
-    resolution: {integrity: sha512-ln6KbowE2srdzfyAHnDqu1sVNTKHJPWd/twjp4Boe8l8e4iVw3bhxVYpWEUyL6QqPC7wMorzxut/yFcOq4LojA==}
+  '@aws-sdk/client-appsync@3.983.0':
+    resolution: {integrity: sha512-Utz3Fowp750Tp3eFtoK/mzqXT+wLMwGNYsfVcwnjBEN7M+JQZlKujp23qGvzD2Eo3H+pCwsrgl685JqKFhXACQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-cloudcontrol@3.982.0':
-    resolution: {integrity: sha512-phIjbU27z2R6ydUw1h3z5uj26iqtLc1/zeMIsWgTTqgj0seC6kMgH3Hlny43i6MrJ2EuGrSWpioC1QsGUCziWg==}
+  '@aws-sdk/client-cloudcontrol@3.983.0':
+    resolution: {integrity: sha512-Jd1l0NW4B8mb1jJplpWi5WCc6SVk6N0DjSUgLvEx+fOF5OLIM8sytEeDRlaWM8dKdzC2ZAYBJDZ369GTijctPA==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-cloudformation@3.982.0':
-    resolution: {integrity: sha512-KRNcUl9rC8IHccwlz/0SiXsMbT1VGvNry4JJ2yzjHkWgIYXJb7ti4e04JX+9ajl1LNGHX+Zt28Gzh3gVK9nlAw==}
+  '@aws-sdk/client-cloudformation@3.983.0':
+    resolution: {integrity: sha512-zFdhkU24dqmFUL/fM+PhfQ8eWziMCVyHOQqFeJ1Kr20Yovl/h0CZoztNkdHVkGaXndMeHcMpsvb/pF1fAmW/ag==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-cloudwatch-logs@3.982.0':
-    resolution: {integrity: sha512-GqftH+v8eYjyD41rCWY6IOpjy43xL8bJYqKgxB6grVPhI4GM+ZBjjSPfWaHWtQje7SHsDuQybIMrdpmkymDjLA==}
+  '@aws-sdk/client-cloudwatch-logs@3.983.0':
+    resolution: {integrity: sha512-A6f0/tAMQhoKYkXNyNNUNYRMocMEd57F6BdcaWz0Olr8K5RjvsVLvMW4KlKQ1IjA8cKF56rr7s5Yl/PQtvzrtQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-codebuild@3.982.0':
-    resolution: {integrity: sha512-zk3szwDJdfot7voDMZjkmLgM8AAsm/WhCemqISxSM5hAkSLeQ+h6v3ktQv7IcukuwXZpkanf7WMV96xH4X4PcQ==}
+  '@aws-sdk/client-codebuild@3.983.0':
+    resolution: {integrity: sha512-hsjP+kqtEVNoIsPM4HPj2f0BBQXB94b8RaHRSmU2qK+8tBMcJg/81KSyvmHgFQBvQiYFkRY6axRfUfhqtsnflA==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/client-cognito-identity@3.980.0':
     resolution: {integrity: sha512-nLgMW2drTzv+dTo3ORCcotQPcrUaTQ+xoaDTdSaUXdZO7zbbVyk7ysE5GDTnJdZWcUjHOSB8xfNQhOTTNVPhFw==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-cognito-identity@3.982.0':
-    resolution: {integrity: sha512-Y+ZS2tqd8tMWmrZ1S8JBo5E4pWpLvYvmLKDQGigwd9vAySX4+F4SoCzaS0NeqYcWP741A5n1AkM/e5o1a3v++w==}
+  '@aws-sdk/client-cognito-identity@3.983.0':
+    resolution: {integrity: sha512-ZbDx0koMsnj6wDH1BGKcbsO5DB34XfJB8/u/WNIyqQp04LXqXTcLCV1TgflRIyJ6RwYxsssic2mQ8HfZPGRqEg==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/client-ec2@3.624.0':
@@ -770,16 +770,16 @@ packages:
     resolution: {integrity: sha512-Mkc+sg/7U852N5qVP8HPyBQqf3brIZ7AxAtEDm8iYahjQcF4T2fEKNB17EPKClW9dZNFT9vvdhpBcF+T8v9sVg==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-ecr@3.982.0':
-    resolution: {integrity: sha512-Rz1xVBcLS0TBmO1f9VpXBwX48+cOgJu0gWUJdP+vBmtwSMBv+u1IM8KFHOR5wiMNRHMzglviAbXaF3czba+Hmw==}
+  '@aws-sdk/client-ecr@3.983.0':
+    resolution: {integrity: sha512-ys6G8n6QW/+sTVwyb/NoCRGyHad3LLmkZncr6Ku43D4ABQHkvJettj/MLhcBO9wVSY9cnymiQWEhSY7Gy73/lA==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-ecs@3.982.0':
-    resolution: {integrity: sha512-FdRwi9TvByagMC7yUWw/HEy7/C53l5i4A4m6wl+ahhhfC9dFx70JH/rekf9mUOpvuI6dG1ra8KUz3CQDumJG7Q==}
+  '@aws-sdk/client-ecs@3.983.0':
+    resolution: {integrity: sha512-X0xiI40rfdsqpHEHZ31kN8JZJSgBZVxkxEgugds3aPqZxZBBS/T98eFuzwPQ0L+iYERG1jR4+SQPG3sBwoAOgA==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-elastic-load-balancing-v2@3.982.0':
-    resolution: {integrity: sha512-lESPnv5uTSU2V071PCpzpJ0jvS+ZDj4v/jA1AkNm3SjNaFvuD34h4s6mp3JOmhjdkSOFmxuR0i6XQfNCjVWydw==}
+  '@aws-sdk/client-elastic-load-balancing-v2@3.983.0':
+    resolution: {integrity: sha512-HzBhjnlVvpzqFiArSd8L41X6D5vHooQRoWofXw7+d6nNixuVv5fB6rwjMx1t9ej3baKyxm1tPUsLi8g/qnoG8Q==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/client-firehose@3.723.0':
@@ -798,8 +798,8 @@ packages:
     resolution: {integrity: sha512-N0OMDqc9uuXQji5iIir+D9u08oA9yV1Xtpyh6oCrC8Ocm7rh6jMDATIQKj9iVBdLbpetpf3le19oinN4ZDQYbg==}
     engines: {node: '>=18.0.0'}
 
-  '@aws-sdk/client-kms@3.982.0':
-    resolution: {integrity: sha512-jZp/L5A7o8IWUbJ0jjkApplMOCmJXHxiFU8fAw/FkVLbjpnSIiarqVXeDdcDAnEaegZ8e1jOYLBeFI912Sm11w==}
+  '@aws-sdk/client-kms@3.983.0':
+    resolution: {integrity: sha512-Ig4HbtUgxCgnY0WMiL+F3nw5dfNQWYtsbBbc4opQhLx23LhPwGHoQHFkZ1XDb2jsNxPR0a0InVEsrTv1tW676w==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/client-lambda@3.624.0':
@@ -818,24 +818,24 @@ packages:
     resolution: {integrity: sha512-WZytF5YaDqEaJ/+2xm//ux+ER3pDwHU4ub4xXgMs46vG8WVLEDzILXp+Nn78w7W2sMwaQO12RYMvqgIB+/wF2A==}
     engines: {node: '>=16.0.0'}
 
-  '@aws-sdk/client-route-53@3.982.0':
-    resolution: {integrity: sha512-MVCkA0dv0A333UGT+B2iVywauzrc5FOo7rPPhVtzIhNO3ZhEA0d0Qm2troyMOPgBKFRIVzomj1jeeXUn5LZhBg==}
+  '@aws-sdk/client-route-53@3.983.0':
+    resolution: {integrity: sha512-vBuDnkt4EOxRswZYzEm2Qbcy5HkHs22oxpkhpjuZIkNV7o76Ti19erfcCtAslJYr6esy+SPWGF5OZyQ/4+yO2w==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-s3@3.982.0':
-    resolution: {integrity: sha512-k0ANYAtPiON9BwLXcDgJXkmmCAGEuSk2pZOvrMej2kNhs3xTXoPshIUR5UMCD9apYiWtXJJfXMZSgaME+iWNaQ==}
+  '@aws-sdk/client-s3@3.983.0':
+    resolution: {integrity: sha512-V40PT2irPh3lj+Z95tZI6batVrjaTrWEOXRNVBuoZSgpM3Ak1jiE9ZXwVLkMcbb9/GH4xVpB3EsGM7gbxmgFLQ==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-secrets-manager@3.982.0':
-    resolution: {integrity: sha512-kipHYDesDGqzQSooO1J78ZiC/cW9NybGHmyu5Woz8ANvZ1VmFe2mwPt8jlfSeJXxAQdFK/HWGRc7/9u46a6QOQ==}
+  '@aws-sdk/client-secrets-manager@3.983.0':
+    resolution: {integrity: sha512-QEj/6wPwAvVjVg/ACkc9CDUNyKv88DZFSppR9raNaRHmtTuDQB98JeOIbdYl5s3lUur4oMsTtYwSKhBJ53IZog==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-sfn@3.982.0':
-    resolution: {integrity: sha512-hnWc57h7Zsuik2KGefZN//Q5ftpU8hZ/C0aDOJ1A6WNOiUKjRNksSuB1M7MblXLkXGduuEABUzQNbo495rJWrg==}
+  '@aws-sdk/client-sfn@3.983.0':
+    resolution: {integrity: sha512-tOVtUrcOObTRSSdR+P/ETdBJlliThgWCJ08i5/4Jj4sPH91Ww6Xbwohnm51cAjNMnE0nJiNgEto4MYqWm/DHyg==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/client-ssm@3.982.0':
-    resolution: {integrity: sha512-UOIbr+7UGscIIbz4DO3SIgy/oujcPbwytPeNUcSc1+9Kq3qkanFDOx7aRTkmWrFt+M9nO9o46xYsgqcsP/0E8A==}
+  '@aws-sdk/client-ssm@3.983.0':
+    resolution: {integrity: sha512-5EO2C6axdxWHbH+gxa4dw3Q2gWAxFDkrzW1tZ2r80uvXVPIiosaUjmhY+tkkVcNSGNtv1gDgXbtcXkUTQ8WcgA==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/client-sso-oidc@3.624.0':
@@ -990,19 +990,19 @@ packages:
     resolution: {integrity: sha512-hIzw2XzrG8jzsUSEatehmpkd5rWzASg5IHUfA+m01k/RtvfAML7ZJVVohuKdhAYx+wV2AThLiQJVzqn7F0khrw==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/credential-providers@3.982.0':
-    resolution: {integrity: sha512-K/Pk0NZOM+M90smB4uOJPdUycCfcvYzz5fsWUetLJNqay/aNOxFr5F9D0C5IOG+erbQZC2TK/lCx1VGusiv2Rw==}
+  '@aws-sdk/credential-providers@3.983.0':
+    resolution: {integrity: sha512-G2nmPoHdEhLJMae0Y4CpkR5OlsQKUXAi7LNLUOZfNMFCstPQfI6uEHqTmKT9EyrbQkD3Y+rAbRTxTt3FMm+B4A==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/ec2-metadata-service@3.982.0':
-    resolution: {integrity: sha512-VjhTzZkKdfffYrQvoSkMsUKLk1DvHHqjRARm1NqGwZU5KOPKI0fx5V3CYRLJ1pH225LwftG7N8plV2OgLlTGVA==}
+  '@aws-sdk/ec2-metadata-service@3.983.0':
+    resolution: {integrity: sha512-ZmPGoA9eANgnNOHLik1zYpGRg0j0/tGBPTN1+ULwKpH9V76fETEn9FlztWg3N+ZJ5PS8n7wHdS6S/A2zaZHf8w==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/lib-storage@3.982.0':
-    resolution: {integrity: sha512-N3FeXRwWxkRq5/WSNqgg4PNaT6mFG8eZyKs1AsS7n3PvoLTa17qTvtKUlxYvyf4AC5qNRF8Vp1OCMQycV013SQ==}
+  '@aws-sdk/lib-storage@3.983.0':
+    resolution: {integrity: sha512-HSNbo+n07ectDHSoGXqVZu1x/XxYD2D3sNvTjFHEquyI9T8YTyg/iMcFoY1RutbHVQpiBp/qQEaiiF7H4gOXrA==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
-      '@aws-sdk/client-s3': 3.982.0
+      '@aws-sdk/client-s3': ^3.983.0
 
   '@aws-sdk/middleware-bucket-endpoint@3.972.3':
     resolution: {integrity: sha512-fmbgWYirF67YF1GfD7cg5N6HHQ96EyRNx/rDIrTF277/zTWVuPI2qS/ZHgofwR1NZPe/NWvoppflQY01LrbVLg==}
@@ -1096,6 +1096,10 @@ packages:
     resolution: {integrity: sha512-VVkaH27digrJfdVrT64rjkllvOp4oRiZuuJvrylLXAKl18ujToJR7AqpDldL/LS63RVne3QWIpkygIymxFtliQ==}
     engines: {node: '>=20.0.0'}
 
+  '@aws-sdk/nested-clients@3.983.0':
+    resolution: {integrity: sha512-4bUzDkJlSPwfegO23ZSBrheuTI8UyAgNzptm1K6fZAIOIc1vnFl12TonecbssAfmM0/UdyTn5QDomwEfIdmJkQ==}
+    engines: {node: '>=20.0.0'}
+
   '@aws-sdk/region-config-resolver@3.614.0':
     resolution: {integrity: sha512-vDCeMXvic/LU0KFIUjpC3RiSTIkkvESsEfbVHiHH0YINfl8HnEqR5rj+L8+phsCeVg2+LmYwYxd5NRz4PHxt5g==}
     engines: {node: '>=16.0.0'}
@@ -1108,8 +1112,8 @@ packages:
     resolution: {integrity: sha512-v4J8qYAWfOMcZ4MJUyatntOicTzEMaU7j3OpkRCGGFSL2NgXQ5VbxauIyORA+pxdKZ0qQG2tCQjQjZDlXEC3Ow==}
     engines: {node: '>=20.0.0'}
 
-  '@aws-sdk/signature-v4-multi-region@3.982.0':
-    resolution: {integrity: sha512-AWqjMAH848aNwnLCtIKM3WO00eHuUoYVfQMP4ccrUHhnEduGOusVgdHQ5mLNQZZNZzREuBwnPPhIP55cy0gFSg==}
+  '@aws-sdk/signature-v4-multi-region@3.983.0':
+    resolution: {integrity: sha512-11FCcxI/WKRufKDdPgKPXtrhjDArhkOPb4mf66rICZUnPHlD8Cb7cjZZS/eFC+iuwoHBosrxo0hYsvK3s7DxGw==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/token-providers@3.614.0':
@@ -1158,6 +1162,10 @@ packages:
 
   '@aws-sdk/util-endpoints@3.982.0':
     resolution: {integrity: sha512-M27u8FJP7O0Of9hMWX5dipp//8iglmV9jr7R8SR8RveU+Z50/8TqH68Tu6wUWBGMfXjzbVwn1INIAO5lZrlxXQ==}
+    engines: {node: '>=20.0.0'}
+
+  '@aws-sdk/util-endpoints@3.983.0':
+    resolution: {integrity: sha512-t/VbL2X3gvDEjC4gdySOeFFOZGQEBKwa23pRHeB7hBLBZ119BB/2OEFtTFWKyp3bnMQgxpeVeGS7/hxk6wpKJw==}
     engines: {node: '>=20.0.0'}
 
   '@aws-sdk/util-format-url@3.609.0':
@@ -3200,8 +3208,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.10':
-    resolution: {integrity: sha512-WPigyYuGhgZ/cTPRXB2EwUw+XvsRA3GqHlsP4qteqrnnjDrApbS7MxcGr/hke5iUoeB7E/gQtrs9I37zAJ0Vjw==}
+  '@types/react@19.2.11':
+    resolution: {integrity: sha512-tORuanb01iEzWvMGVGv2ZDhYZVeRMrw453DCSAIn/5yvcSVnMoUMTyf33nQJLahYEnv9xqrTNbgz4qY5EfSh0g==}
 
   '@types/uuid@9.0.8':
     resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
@@ -6304,20 +6312,20 @@ snapshots:
       '@aws-amplify/backend-output-schemas': 1.8.0(zod@3.25.17)
       '@aws-amplify/backend-secret': 1.4.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/cli-core': 2.2.3(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-amplify/client-config': 1.10.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-amplify/deployed-backend-client': 1.8.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
+      '@aws-amplify/client-config': 1.10.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
+      '@aws-amplify/deployed-backend-client': 1.8.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/form-generator': 1.2.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@aws-amplify/model-generator': 1.2.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@3.25.17)
+      '@aws-amplify/model-generator': 1.2.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@3.25.17)
       '@aws-amplify/platform-core': 1.10.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/plugin-types': 1.11.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-amplify/sandbox': 2.1.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(typescript@5.9.3)
+      '@aws-amplify/sandbox': 2.1.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(typescript@5.9.3)
       '@aws-amplify/schema-generator': 1.4.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-sdk/client-amplify': 3.982.0
-      '@aws-sdk/client-cloudformation': 3.982.0
-      '@aws-sdk/client-s3': 3.982.0
+      '@aws-sdk/client-amplify': 3.983.0
+      '@aws-sdk/client-cloudformation': 3.983.0
+      '@aws-sdk/client-s3': 3.983.0
       '@aws-sdk/client-sts': 3.982.0
       '@aws-sdk/credential-provider-ini': 3.972.4
-      '@aws-sdk/credential-providers': 3.982.0
+      '@aws-sdk/credential-providers': 3.983.0
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
       '@opentelemetry/api': 1.9.0
@@ -6396,7 +6404,7 @@ snapshots:
       '@aws-amplify/backend-output-schemas': 1.8.0(zod@4.3.6)
       '@aws-amplify/backend-output-storage': 1.3.3(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@4.3.6)
       '@aws-amplify/plugin-types': 1.11.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-sdk/client-s3': 3.982.0
+      '@aws-sdk/client-s3': 3.983.0
       aws-cdk-lib: 2.237.1(constructs@10.4.5)
       constructs: 10.4.5
       execa: 9.6.1
@@ -6435,7 +6443,7 @@ snapshots:
     dependencies:
       '@aws-amplify/platform-core': 1.10.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/plugin-types': 1.11.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-sdk/client-ssm': 3.982.0
+      '@aws-sdk/client-ssm': 3.983.0
     transitivePeerDependencies:
       - '@aws-cdk/cli-plugin-contract'
       - '@aws-sdk/types'
@@ -6460,7 +6468,7 @@ snapshots:
       - react-native-b4a
       - zod
 
-  '@aws-amplify/backend@1.20.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@4.3.6)':
+  '@aws-amplify/backend@1.20.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@4.3.6)':
     dependencies:
       '@aws-amplify/backend-auth': 1.9.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@4.3.6)
       '@aws-amplify/backend-data': 1.6.3(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@4.3.6)
@@ -6469,11 +6477,11 @@ snapshots:
       '@aws-amplify/backend-output-storage': 1.3.3(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@4.3.6)
       '@aws-amplify/backend-secret': 1.4.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/backend-storage': 1.4.3(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@4.3.6)
-      '@aws-amplify/client-config': 1.10.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
+      '@aws-amplify/client-config': 1.10.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/data-schema': 1.23.0
       '@aws-amplify/platform-core': 1.10.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/plugin-types': 1.11.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-sdk/client-amplify': 3.982.0
+      '@aws-sdk/client-amplify': 3.983.0
       aws-cdk-lib: 2.237.1(constructs@10.4.5)
       constructs: 10.4.5
     transitivePeerDependencies:
@@ -6491,7 +6499,7 @@ snapshots:
   '@aws-amplify/cli-core@2.2.3(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)':
     dependencies:
       '@aws-amplify/platform-core': 1.10.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-sdk/client-cloudformation': 3.982.0
+      '@aws-sdk/client-cloudformation': 3.983.0
       '@inquirer/prompts': 7.10.1
       '@opentelemetry/api': 1.9.0
       execa: 9.6.1
@@ -6511,16 +6519,16 @@ snapshots:
       - constructs
       - react-native-b4a
 
-  '@aws-amplify/client-config@1.10.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)':
+  '@aws-amplify/client-config@1.10.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)':
     dependencies:
       '@aws-amplify/backend-output-schemas': 1.8.0(zod@3.25.17)
-      '@aws-amplify/deployed-backend-client': 1.8.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-amplify/model-generator': 1.2.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@3.25.17)
+      '@aws-amplify/deployed-backend-client': 1.8.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
+      '@aws-amplify/model-generator': 1.2.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@3.25.17)
       '@aws-amplify/platform-core': 1.10.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/plugin-types': 1.11.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-sdk/client-amplify': 3.982.0
-      '@aws-sdk/client-cloudformation': 3.982.0
-      '@aws-sdk/client-s3': 3.982.0
+      '@aws-sdk/client-amplify': 3.983.0
+      '@aws-sdk/client-cloudformation': 3.983.0
+      '@aws-sdk/client-s3': 3.983.0
       zod: 3.25.17
     transitivePeerDependencies:
       - '@aws-cdk/cli-plugin-contract'
@@ -6593,14 +6601,14 @@ snapshots:
       rxjs: 7.8.2
       ulid: 2.4.0
 
-  '@aws-amplify/deployed-backend-client@1.8.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)':
+  '@aws-amplify/deployed-backend-client@1.8.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)':
     dependencies:
       '@aws-amplify/backend-output-schemas': 1.8.0(zod@3.25.17)
       '@aws-amplify/platform-core': 1.10.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/plugin-types': 1.11.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-sdk/client-amplify': 3.982.0
-      '@aws-sdk/client-cloudformation': 3.982.0
-      '@aws-sdk/client-s3': 3.982.0
+      '@aws-sdk/client-amplify': 3.983.0
+      '@aws-sdk/client-cloudformation': 3.983.0
+      '@aws-sdk/client-s3': 3.983.0
       '@aws-sdk/types': 3.973.1
       zod: 3.25.17
     transitivePeerDependencies:
@@ -6618,9 +6626,9 @@ snapshots:
       '@aws-amplify/codegen-ui-react': 2.20.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@aws-amplify/graphql-directives': 2.7.1
       '@aws-amplify/graphql-docs-generator': 4.2.1
-      '@aws-sdk/client-amplifyuibuilder': 3.982.0
-      '@aws-sdk/client-appsync': 3.982.0
-      '@aws-sdk/client-s3': 3.982.0
+      '@aws-sdk/client-amplifyuibuilder': 3.983.0
+      '@aws-sdk/client-appsync': 3.983.0
+      '@aws-sdk/client-s3': 3.983.0
       '@graphql-codegen/typescript': 4.1.6(graphql@15.10.1)
       graphql: 15.10.1
       node-fetch: 3.3.2
@@ -6733,19 +6741,19 @@ snapshots:
       source-map-support: 0.5.21
       yargs: 15.4.1
 
-  '@aws-amplify/model-generator@1.2.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@3.25.17)':
+  '@aws-amplify/model-generator@1.2.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(zod@3.25.17)':
     dependencies:
       '@aws-amplify/backend-output-schemas': 1.8.0(zod@3.25.17)
-      '@aws-amplify/deployed-backend-client': 1.8.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
+      '@aws-amplify/deployed-backend-client': 1.8.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/graphql-generator': 0.5.3
       '@aws-amplify/graphql-types-generator': 3.6.0
       '@aws-amplify/platform-core': 1.10.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/plugin-types': 1.11.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-sdk/client-amplify': 3.982.0
-      '@aws-sdk/client-appsync': 3.982.0
-      '@aws-sdk/client-cloudformation': 3.982.0
-      '@aws-sdk/client-s3': 3.982.0
-      '@aws-sdk/credential-providers': 3.982.0
+      '@aws-sdk/client-amplify': 3.983.0
+      '@aws-sdk/client-appsync': 3.983.0
+      '@aws-sdk/client-cloudformation': 3.983.0
+      '@aws-sdk/client-s3': 3.983.0
+      '@aws-sdk/credential-providers': 3.983.0
       '@aws-sdk/types': 3.973.1
       graphql: 15.10.1
     transitivePeerDependencies:
@@ -6800,19 +6808,19 @@ snapshots:
       - bare-abort-controller
       - react-native-b4a
 
-  '@aws-amplify/sandbox@2.1.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(typescript@5.9.3)':
+  '@aws-amplify/sandbox@2.1.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(typescript@5.9.3)':
     dependencies:
       '@aws-amplify/backend-deployer': 2.1.5(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)(typescript@5.9.3)
       '@aws-amplify/backend-secret': 1.4.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/cli-core': 2.2.3(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-amplify/client-config': 1.10.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-amplify/deployed-backend-client': 1.8.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.982.0)(@aws-sdk/client-cloudformation@3.982.0)(@aws-sdk/client-s3@3.982.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
+      '@aws-amplify/client-config': 1.10.0(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
+      '@aws-amplify/deployed-backend-client': 1.8.1(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/client-amplify@3.983.0)(@aws-sdk/client-cloudformation@3.983.0)(@aws-sdk/client-s3@3.983.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/platform-core': 1.10.4(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
       '@aws-amplify/plugin-types': 1.11.2(@aws-cdk/cli-plugin-contract@2.181.0)(@aws-sdk/types@3.973.1)(aws-cdk-lib@2.237.1(constructs@10.4.5))(constructs@10.4.5)
-      '@aws-sdk/client-cloudwatch-logs': 3.982.0
+      '@aws-sdk/client-cloudwatch-logs': 3.983.0
       '@aws-sdk/client-lambda': 3.982.0
-      '@aws-sdk/client-ssm': 3.982.0
-      '@aws-sdk/credential-providers': 3.982.0
+      '@aws-sdk/client-ssm': 3.983.0
+      '@aws-sdk/credential-providers': 3.983.0
       '@aws-sdk/types': 3.973.1
       '@opentelemetry/api': 1.9.0
       '@parcel/watcher': 2.5.6
@@ -6864,10 +6872,10 @@ snapshots:
       fast-xml-parser: 5.3.4
       tslib: 2.8.1
 
-  '@aws-amplify/ui-react-core@3.4.7(@aws-amplify/core@6.16.0)(@types/react@19.2.10)(aws-amplify@6.16.0)(react@19.2.4)':
+  '@aws-amplify/ui-react-core@3.4.7(@aws-amplify/core@6.16.0)(@types/react@19.2.11)(aws-amplify@6.16.0)(react@19.2.4)':
     dependencies:
       '@aws-amplify/ui': 6.13.0(@aws-amplify/core@6.16.0)(aws-amplify@6.16.0)(xstate@4.38.3)
-      '@xstate/react': 3.2.2(@types/react@19.2.10)(react@19.2.4)(xstate@4.38.3)
+      '@xstate/react': 3.2.2(@types/react@19.2.11)(react@19.2.4)(xstate@4.38.3)
       aws-amplify: 6.16.0
       lodash: 4.17.23
       react: 19.2.4
@@ -6878,15 +6886,15 @@ snapshots:
       - '@types/react'
       - '@xstate/fsm'
 
-  '@aws-amplify/ui-react@6.13.2(@aws-amplify/core@6.16.0)(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(aws-amplify@6.16.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(xstate@4.38.3)':
+  '@aws-amplify/ui-react@6.13.2(@aws-amplify/core@6.16.0)(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(aws-amplify@6.16.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(xstate@4.38.3)':
     dependencies:
       '@aws-amplify/core': 6.16.0
       '@aws-amplify/ui': 6.13.0(@aws-amplify/core@6.16.0)(aws-amplify@6.16.0)(xstate@4.38.3)
-      '@aws-amplify/ui-react-core': 3.4.7(@aws-amplify/core@6.16.0)(@types/react@19.2.10)(aws-amplify@6.16.0)(react@19.2.4)
-      '@radix-ui/react-direction': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-dropdown-menu': 2.1.16(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-slider': 1.3.6(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@xstate/react': 3.2.2(@types/react@19.2.10)(react@19.2.4)(xstate@4.38.3)
+      '@aws-amplify/ui-react-core': 3.4.7(@aws-amplify/core@6.16.0)(@types/react@19.2.11)(aws-amplify@6.16.0)(react@19.2.4)
+      '@radix-ui/react-direction': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-dropdown-menu': 2.1.16(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-slider': 1.3.6(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@xstate/react': 3.2.2(@types/react@19.2.11)(react@19.2.4)(xstate@4.38.3)
       lodash: 4.17.23
       qrcode: 1.5.0
       react: 19.2.4
@@ -6914,9 +6922,9 @@ snapshots:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0': {}
 
-  '@aws-cdk/aws-service-spec@0.1.147':
+  '@aws-cdk/aws-service-spec@0.1.148':
     dependencies:
-      '@aws-cdk/service-spec-types': 0.0.213
+      '@aws-cdk/service-spec-types': 0.0.214
       '@cdklabs/tskb': 0.0.4
 
   '@aws-cdk/cdk-assets-lib@1.2.1':
@@ -6924,12 +6932,12 @@ snapshots:
       '@aws-cdk/cloud-assembly-api': 2.0.1(@aws-cdk/cloud-assembly-schema@50.3.0)
       '@aws-cdk/cloud-assembly-schema': 50.3.0
       '@aws-cdk/cx-api': 2.237.1(@aws-cdk/cloud-assembly-schema@50.3.0)
-      '@aws-sdk/client-ecr': 3.982.0
-      '@aws-sdk/client-s3': 3.982.0
-      '@aws-sdk/client-secrets-manager': 3.982.0
+      '@aws-sdk/client-ecr': 3.983.0
+      '@aws-sdk/client-s3': 3.983.0
+      '@aws-sdk/client-secrets-manager': 3.983.0
       '@aws-sdk/client-sts': 3.982.0
-      '@aws-sdk/credential-providers': 3.982.0
-      '@aws-sdk/lib-storage': 3.982.0(@aws-sdk/client-s3@3.982.0)
+      '@aws-sdk/credential-providers': 3.983.0
+      '@aws-sdk/lib-storage': 3.983.0(@aws-sdk/client-s3@3.983.0)
       '@smithy/config-resolver': 4.4.6
       '@smithy/node-config-provider': 4.3.8
       archiver: 7.0.1
@@ -6951,11 +6959,11 @@ snapshots:
 
   '@aws-cdk/cloud-assembly-schema@50.3.0': {}
 
-  '@aws-cdk/cloudformation-diff@2.185.1(@aws-sdk/client-cloudformation@3.982.0)':
+  '@aws-cdk/cloudformation-diff@2.185.1(@aws-sdk/client-cloudformation@3.983.0)':
     dependencies:
-      '@aws-cdk/aws-service-spec': 0.1.147
+      '@aws-cdk/aws-service-spec': 0.1.148
       '@aws-cdk/service-spec-types': 0.0.198
-      '@aws-sdk/client-cloudformation': 3.982.0
+      '@aws-sdk/client-cloudformation': 3.983.0
       chalk: 4.1.2
       diff: 8.0.3
       fast-deep-equal: 3.1.3
@@ -6970,7 +6978,7 @@ snapshots:
     dependencies:
       '@cdklabs/tskb': 0.0.4
 
-  '@aws-cdk/service-spec-types@0.0.213':
+  '@aws-cdk/service-spec-types@0.0.214':
     dependencies:
       '@cdklabs/tskb': 0.0.4
 
@@ -6979,29 +6987,29 @@ snapshots:
       '@aws-cdk/cdk-assets-lib': 1.2.1
       '@aws-cdk/cli-plugin-contract': 2.181.0
       '@aws-cdk/cloud-assembly-schema': 50.3.0
-      '@aws-cdk/cloudformation-diff': 2.185.1(@aws-sdk/client-cloudformation@3.982.0)
+      '@aws-cdk/cloudformation-diff': 2.185.1(@aws-sdk/client-cloudformation@3.983.0)
       '@aws-cdk/cx-api': 2.237.1(@aws-cdk/cloud-assembly-schema@50.3.0)
-      '@aws-sdk/client-appsync': 3.982.0
-      '@aws-sdk/client-cloudcontrol': 3.982.0
-      '@aws-sdk/client-cloudformation': 3.982.0
-      '@aws-sdk/client-cloudwatch-logs': 3.982.0
-      '@aws-sdk/client-codebuild': 3.982.0
+      '@aws-sdk/client-appsync': 3.983.0
+      '@aws-sdk/client-cloudcontrol': 3.983.0
+      '@aws-sdk/client-cloudformation': 3.983.0
+      '@aws-sdk/client-cloudwatch-logs': 3.983.0
+      '@aws-sdk/client-codebuild': 3.983.0
       '@aws-sdk/client-ec2': 3.982.0
-      '@aws-sdk/client-ecr': 3.982.0
-      '@aws-sdk/client-ecs': 3.982.0
-      '@aws-sdk/client-elastic-load-balancing-v2': 3.982.0
+      '@aws-sdk/client-ecr': 3.983.0
+      '@aws-sdk/client-ecs': 3.983.0
+      '@aws-sdk/client-elastic-load-balancing-v2': 3.983.0
       '@aws-sdk/client-iam': 3.982.0
-      '@aws-sdk/client-kms': 3.982.0
+      '@aws-sdk/client-kms': 3.983.0
       '@aws-sdk/client-lambda': 3.982.0
-      '@aws-sdk/client-route-53': 3.982.0
-      '@aws-sdk/client-s3': 3.982.0
-      '@aws-sdk/client-secrets-manager': 3.982.0
-      '@aws-sdk/client-sfn': 3.982.0
-      '@aws-sdk/client-ssm': 3.982.0
+      '@aws-sdk/client-route-53': 3.983.0
+      '@aws-sdk/client-s3': 3.983.0
+      '@aws-sdk/client-secrets-manager': 3.983.0
+      '@aws-sdk/client-sfn': 3.983.0
+      '@aws-sdk/client-ssm': 3.983.0
       '@aws-sdk/client-sts': 3.982.0
-      '@aws-sdk/credential-providers': 3.982.0
-      '@aws-sdk/ec2-metadata-service': 3.982.0
-      '@aws-sdk/lib-storage': 3.982.0(@aws-sdk/client-s3@3.982.0)
+      '@aws-sdk/credential-providers': 3.983.0
+      '@aws-sdk/ec2-metadata-service': 3.983.0
+      '@aws-sdk/lib-storage': 3.983.0(@aws-sdk/client-s3@3.983.0)
       '@smithy/middleware-endpoint': 4.4.13
       '@smithy/property-provider': 4.2.8
       '@smithy/shared-ini-file-loader': 4.4.3
@@ -7072,7 +7080,7 @@ snapshots:
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
-  '@aws-sdk/client-amplify@3.982.0':
+  '@aws-sdk/client-amplify@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7084,7 +7092,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7116,7 +7124,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-amplifyuibuilder@3.982.0':
+  '@aws-sdk/client-amplifyuibuilder@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7128,7 +7136,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7160,7 +7168,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-appsync@3.982.0':
+  '@aws-sdk/client-appsync@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7172,7 +7180,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7205,7 +7213,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-cloudcontrol@3.982.0':
+  '@aws-sdk/client-cloudcontrol@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7217,7 +7225,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7250,7 +7258,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-cloudformation@3.982.0':
+  '@aws-sdk/client-cloudformation@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7262,7 +7270,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7295,7 +7303,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-cloudwatch-logs@3.982.0':
+  '@aws-sdk/client-cloudwatch-logs@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7307,7 +7315,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7342,7 +7350,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-codebuild@3.982.0':
+  '@aws-sdk/client-codebuild@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7354,7 +7362,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7430,7 +7438,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-cognito-identity@3.982.0':
+  '@aws-sdk/client-cognito-identity@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7442,7 +7450,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7569,7 +7577,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-ecr@3.982.0':
+  '@aws-sdk/client-ecr@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7581,7 +7589,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7614,7 +7622,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-ecs@3.982.0':
+  '@aws-sdk/client-ecs@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7626,7 +7634,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7659,7 +7667,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-elastic-load-balancing-v2@3.982.0':
+  '@aws-sdk/client-elastic-load-balancing-v2@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7671,7 +7679,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -7711,7 +7719,7 @@ snapshots:
       '@aws-sdk/client-sso-oidc': 3.723.0(@aws-sdk/client-sts@3.982.0)
       '@aws-sdk/client-sts': 3.723.0
       '@aws-sdk/core': 3.723.0
-      '@aws-sdk/credential-provider-node': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.723.0)
+      '@aws-sdk/credential-provider-node': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.982.0)
       '@aws-sdk/middleware-host-header': 3.723.0
       '@aws-sdk/middleware-logger': 3.723.0
       '@aws-sdk/middleware-recursion-detection': 3.723.0
@@ -7849,7 +7857,7 @@ snapshots:
       '@aws-sdk/client-sso-oidc': 3.723.0(@aws-sdk/client-sts@3.723.0)
       '@aws-sdk/client-sts': 3.723.0
       '@aws-sdk/core': 3.723.0
-      '@aws-sdk/credential-provider-node': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.723.0)
+      '@aws-sdk/credential-provider-node': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.982.0)
       '@aws-sdk/middleware-host-header': 3.723.0
       '@aws-sdk/middleware-logger': 3.723.0
       '@aws-sdk/middleware-recursion-detection': 3.723.0
@@ -7892,7 +7900,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-kms@3.982.0':
+  '@aws-sdk/client-kms@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -7904,7 +7912,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -8043,7 +8051,7 @@ snapshots:
       '@aws-sdk/client-sso-oidc': 3.723.0(@aws-sdk/client-sts@3.723.0)
       '@aws-sdk/client-sts': 3.723.0
       '@aws-sdk/core': 3.723.0
-      '@aws-sdk/credential-provider-node': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.723.0)
+      '@aws-sdk/credential-provider-node': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.982.0)
       '@aws-sdk/middleware-host-header': 3.723.0
       '@aws-sdk/middleware-logger': 3.723.0
       '@aws-sdk/middleware-recursion-detection': 3.723.0
@@ -8130,7 +8138,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-route-53@3.982.0':
+  '@aws-sdk/client-route-53@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -8143,7 +8151,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -8176,7 +8184,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-s3@3.982.0':
+  '@aws-sdk/client-s3@3.983.0':
     dependencies:
       '@aws-crypto/sha1-browser': 5.2.0
       '@aws-crypto/sha256-browser': 5.2.0
@@ -8194,9 +8202,9 @@ snapshots:
       '@aws-sdk/middleware-ssec': 3.972.3
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
-      '@aws-sdk/signature-v4-multi-region': 3.982.0
+      '@aws-sdk/signature-v4-multi-region': 3.983.0
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -8236,7 +8244,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-secrets-manager@3.982.0':
+  '@aws-sdk/client-secrets-manager@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -8248,7 +8256,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -8280,7 +8288,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-sfn@3.982.0':
+  '@aws-sdk/client-sfn@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -8292,7 +8300,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -8324,7 +8332,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-ssm@3.982.0':
+  '@aws-sdk/client-ssm@3.983.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
@@ -8336,7 +8344,7 @@ snapshots:
       '@aws-sdk/middleware-user-agent': 3.972.6
       '@aws-sdk/region-config-resolver': 3.972.3
       '@aws-sdk/types': 3.973.1
-      '@aws-sdk/util-endpoints': 3.982.0
+      '@aws-sdk/util-endpoints': 3.983.0
       '@aws-sdk/util-user-agent-browser': 3.972.3
       '@aws-sdk/util-user-agent-node': 3.972.4
       '@smithy/config-resolver': 4.4.6
@@ -8420,7 +8428,7 @@ snapshots:
       '@aws-crypto/sha256-js': 5.2.0
       '@aws-sdk/client-sts': 3.723.0
       '@aws-sdk/core': 3.723.0
-      '@aws-sdk/credential-provider-node': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.723.0)
+      '@aws-sdk/credential-provider-node': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.982.0)
       '@aws-sdk/middleware-host-header': 3.723.0
       '@aws-sdk/middleware-logger': 3.723.0
       '@aws-sdk/middleware-recursion-detection': 3.723.0
@@ -8684,7 +8692,7 @@ snapshots:
       '@aws-crypto/sha256-js': 5.2.0
       '@aws-sdk/client-sso-oidc': 3.723.0(@aws-sdk/client-sts@3.723.0)
       '@aws-sdk/core': 3.723.0
-      '@aws-sdk/credential-provider-node': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.723.0)
+      '@aws-sdk/credential-provider-node': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.982.0)
       '@aws-sdk/middleware-host-header': 3.723.0
       '@aws-sdk/middleware-logger': 3.723.0
       '@aws-sdk/middleware-recursion-detection': 3.723.0
@@ -8903,25 +8911,6 @@ snapshots:
       - '@aws-sdk/client-sso-oidc'
       - aws-crt
 
-  '@aws-sdk/credential-provider-ini@3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.723.0)':
-    dependencies:
-      '@aws-sdk/client-sts': 3.723.0
-      '@aws-sdk/core': 3.723.0
-      '@aws-sdk/credential-provider-env': 3.723.0
-      '@aws-sdk/credential-provider-http': 3.723.0
-      '@aws-sdk/credential-provider-process': 3.723.0
-      '@aws-sdk/credential-provider-sso': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))
-      '@aws-sdk/credential-provider-web-identity': 3.723.0(@aws-sdk/client-sts@3.723.0)
-      '@aws-sdk/types': 3.723.0
-      '@smithy/credential-provider-imds': 4.2.8
-      '@smithy/property-provider': 4.2.8
-      '@smithy/shared-ini-file-loader': 4.4.3
-      '@smithy/types': 4.12.0
-      tslib: 2.8.1
-    transitivePeerDependencies:
-      - '@aws-sdk/client-sso-oidc'
-      - aws-crt
-
   '@aws-sdk/credential-provider-ini@3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.982.0)':
     dependencies:
       '@aws-sdk/client-sts': 3.982.0
@@ -8986,25 +8975,6 @@ snapshots:
       '@smithy/property-provider': 3.1.11
       '@smithy/shared-ini-file-loader': 3.1.12
       '@smithy/types': 3.7.2
-      tslib: 2.8.1
-    transitivePeerDependencies:
-      - '@aws-sdk/client-sso-oidc'
-      - '@aws-sdk/client-sts'
-      - aws-crt
-
-  '@aws-sdk/credential-provider-node@3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.723.0)':
-    dependencies:
-      '@aws-sdk/credential-provider-env': 3.723.0
-      '@aws-sdk/credential-provider-http': 3.723.0
-      '@aws-sdk/credential-provider-ini': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))(@aws-sdk/client-sts@3.723.0)
-      '@aws-sdk/credential-provider-process': 3.723.0
-      '@aws-sdk/credential-provider-sso': 3.723.0(@aws-sdk/client-sso-oidc@3.723.0(@aws-sdk/client-sts@3.723.0))
-      '@aws-sdk/credential-provider-web-identity': 3.723.0(@aws-sdk/client-sts@3.723.0)
-      '@aws-sdk/types': 3.723.0
-      '@smithy/credential-provider-imds': 4.2.8
-      '@smithy/property-provider': 4.2.8
-      '@smithy/shared-ini-file-loader': 4.4.3
-      '@smithy/types': 4.12.0
       tslib: 2.8.1
     transitivePeerDependencies:
       - '@aws-sdk/client-sso-oidc'
@@ -9121,15 +9091,6 @@ snapshots:
       '@smithy/types': 3.7.2
       tslib: 2.8.1
 
-  '@aws-sdk/credential-provider-web-identity@3.723.0(@aws-sdk/client-sts@3.723.0)':
-    dependencies:
-      '@aws-sdk/client-sts': 3.723.0
-      '@aws-sdk/core': 3.723.0
-      '@aws-sdk/types': 3.723.0
-      '@smithy/property-provider': 4.2.8
-      '@smithy/types': 4.12.0
-      tslib: 2.8.1
-
   '@aws-sdk/credential-provider-web-identity@3.723.0(@aws-sdk/client-sts@3.982.0)':
     dependencies:
       '@aws-sdk/client-sts': 3.982.0
@@ -9151,9 +9112,9 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/credential-providers@3.982.0':
+  '@aws-sdk/credential-providers@3.983.0':
     dependencies:
-      '@aws-sdk/client-cognito-identity': 3.982.0
+      '@aws-sdk/client-cognito-identity': 3.983.0
       '@aws-sdk/core': 3.973.6
       '@aws-sdk/credential-provider-cognito-identity': 3.972.3
       '@aws-sdk/credential-provider-env': 3.972.4
@@ -9164,7 +9125,7 @@ snapshots:
       '@aws-sdk/credential-provider-process': 3.972.4
       '@aws-sdk/credential-provider-sso': 3.972.4
       '@aws-sdk/credential-provider-web-identity': 3.972.4
-      '@aws-sdk/nested-clients': 3.982.0
+      '@aws-sdk/nested-clients': 3.983.0
       '@aws-sdk/types': 3.973.1
       '@smithy/config-resolver': 4.4.6
       '@smithy/core': 3.22.1
@@ -9176,7 +9137,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/ec2-metadata-service@3.982.0':
+  '@aws-sdk/ec2-metadata-service@3.983.0':
     dependencies:
       '@aws-sdk/types': 3.973.1
       '@smithy/node-config-provider': 4.3.8
@@ -9186,9 +9147,9 @@ snapshots:
       '@smithy/util-stream': 4.5.11
       tslib: 2.8.1
 
-  '@aws-sdk/lib-storage@3.982.0(@aws-sdk/client-s3@3.982.0)':
+  '@aws-sdk/lib-storage@3.983.0(@aws-sdk/client-s3@3.983.0)':
     dependencies:
-      '@aws-sdk/client-s3': 3.982.0
+      '@aws-sdk/client-s3': 3.983.0
       '@smithy/abort-controller': 4.2.8
       '@smithy/middleware-endpoint': 4.4.13
       '@smithy/smithy-client': 4.11.2
@@ -9430,6 +9391,49 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
+  '@aws-sdk/nested-clients@3.983.0':
+    dependencies:
+      '@aws-crypto/sha256-browser': 5.2.0
+      '@aws-crypto/sha256-js': 5.2.0
+      '@aws-sdk/core': 3.973.6
+      '@aws-sdk/middleware-host-header': 3.972.3
+      '@aws-sdk/middleware-logger': 3.972.3
+      '@aws-sdk/middleware-recursion-detection': 3.972.3
+      '@aws-sdk/middleware-user-agent': 3.972.6
+      '@aws-sdk/region-config-resolver': 3.972.3
+      '@aws-sdk/types': 3.973.1
+      '@aws-sdk/util-endpoints': 3.983.0
+      '@aws-sdk/util-user-agent-browser': 3.972.3
+      '@aws-sdk/util-user-agent-node': 3.972.4
+      '@smithy/config-resolver': 4.4.6
+      '@smithy/core': 3.22.1
+      '@smithy/fetch-http-handler': 5.3.9
+      '@smithy/hash-node': 4.2.8
+      '@smithy/invalid-dependency': 4.2.8
+      '@smithy/middleware-content-length': 4.2.8
+      '@smithy/middleware-endpoint': 4.4.13
+      '@smithy/middleware-retry': 4.4.30
+      '@smithy/middleware-serde': 4.2.9
+      '@smithy/middleware-stack': 4.2.8
+      '@smithy/node-config-provider': 4.3.8
+      '@smithy/node-http-handler': 4.4.9
+      '@smithy/protocol-http': 5.3.8
+      '@smithy/smithy-client': 4.11.2
+      '@smithy/types': 4.12.0
+      '@smithy/url-parser': 4.2.8
+      '@smithy/util-base64': 4.3.0
+      '@smithy/util-body-length-browser': 4.2.0
+      '@smithy/util-body-length-node': 4.2.1
+      '@smithy/util-defaults-mode-browser': 4.3.29
+      '@smithy/util-defaults-mode-node': 4.2.32
+      '@smithy/util-endpoints': 3.2.8
+      '@smithy/util-middleware': 4.2.8
+      '@smithy/util-retry': 4.2.8
+      '@smithy/util-utf8': 4.2.0
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - aws-crt
+
   '@aws-sdk/region-config-resolver@3.614.0':
     dependencies:
       '@aws-sdk/types': 3.609.0
@@ -9456,7 +9460,7 @@ snapshots:
       '@smithy/types': 4.12.0
       tslib: 2.8.1
 
-  '@aws-sdk/signature-v4-multi-region@3.982.0':
+  '@aws-sdk/signature-v4-multi-region@3.983.0':
     dependencies:
       '@aws-sdk/middleware-sdk-s3': 3.972.6
       '@aws-sdk/types': 3.973.1
@@ -9537,6 +9541,14 @@ snapshots:
       tslib: 2.8.1
 
   '@aws-sdk/util-endpoints@3.982.0':
+    dependencies:
+      '@aws-sdk/types': 3.973.1
+      '@smithy/types': 4.12.0
+      '@smithy/url-parser': 4.2.8
+      '@smithy/util-endpoints': 3.2.8
+      tslib: 2.8.1
+
+  '@aws-sdk/util-endpoints@3.983.0':
     dependencies:
       '@aws-sdk/types': 3.973.1
       '@smithy/types': 4.12.0
@@ -10636,266 +10648,266 @@ snapshots:
 
   '@radix-ui/primitive@1.1.3': {}
 
-  '@radix-ui/react-arrow@1.1.7(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-arrow@1.1.7(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-collection@1.1.7(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-collection@1.1.7(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-context': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-slot': 1.2.3(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-slot': 1.2.3(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-compose-refs@1.1.2(@types/react@19.2.10)(react@19.2.4)':
+  '@radix-ui/react-compose-refs@1.1.2(@types/react@19.2.11)(react@19.2.4)':
     dependencies:
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  '@radix-ui/react-context@1.1.2(@types/react@19.2.10)(react@19.2.4)':
+  '@radix-ui/react-context@1.1.2(@types/react@19.2.11)(react@19.2.4)':
     dependencies:
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  '@radix-ui/react-direction@1.1.1(@types/react@19.2.10)(react@19.2.4)':
+  '@radix-ui/react-direction@1.1.1(@types/react@19.2.11)(react@19.2.4)':
     dependencies:
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  '@radix-ui/react-dismissable-layer@1.1.11(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-dismissable-layer@1.1.11(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@radix-ui/primitive': 1.1.3
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-escape-keydown': 1.1.1(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-escape-keydown': 1.1.1(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-dropdown-menu@2.1.16(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-dropdown-menu@2.1.16(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@radix-ui/primitive': 1.1.3
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-context': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-id': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-menu': 2.1.16(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-id': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-menu': 2.1.16(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-focus-guards@1.1.3(@types/react@19.2.10)(react@19.2.4)':
+  '@radix-ui/react-focus-guards@1.1.3(@types/react@19.2.11)(react@19.2.4)':
     dependencies:
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  '@radix-ui/react-focus-scope@1.1.7(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-focus-scope@1.1.7(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-id@1.1.1(@types/react@19.2.10)(react@19.2.4)':
+  '@radix-ui/react-id@1.1.1(@types/react@19.2.11)(react@19.2.4)':
     dependencies:
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  '@radix-ui/react-menu@2.1.16(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-menu@2.1.16(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@radix-ui/primitive': 1.1.3
-      '@radix-ui/react-collection': 1.1.7(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-context': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-direction': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-dismissable-layer': 1.1.11(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-focus-guards': 1.1.3(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-focus-scope': 1.1.7(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-id': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-popper': 1.2.8(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-portal': 1.1.9(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-presence': 1.1.5(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-roving-focus': 1.1.11(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-slot': 1.2.3(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-collection': 1.1.7(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-direction': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-dismissable-layer': 1.1.11(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-focus-guards': 1.1.3(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-focus-scope': 1.1.7(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-id': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-popper': 1.2.8(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-portal': 1.1.9(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-presence': 1.1.5(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-roving-focus': 1.1.11(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-slot': 1.2.3(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.11)(react@19.2.4)
       aria-hidden: 1.2.6
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
-      react-remove-scroll: 2.7.2(@types/react@19.2.10)(react@19.2.4)
+      react-remove-scroll: 2.7.2(@types/react@19.2.11)(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-popper@1.2.8(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-popper@1.2.8(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@floating-ui/react-dom': 2.1.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-arrow': 1.1.7(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-context': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-rect': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-size': 1.1.1(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-arrow': 1.1.7(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-rect': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-size': 1.1.1(@types/react@19.2.11)(react@19.2.4)
       '@radix-ui/rect': 1.1.1
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-portal@1.1.9(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-portal@1.1.9(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-presence@1.1.5(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-presence@1.1.5(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-primitive@2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-primitive@2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
-      '@radix-ui/react-slot': 1.2.3(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-slot': 1.2.3(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-roving-focus@1.1.11(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-roving-focus@1.1.11(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@radix-ui/primitive': 1.1.3
-      '@radix-ui/react-collection': 1.1.7(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-context': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-direction': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-id': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-collection': 1.1.7(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-direction': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-id': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-slider@1.3.6(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@radix-ui/react-slider@1.3.6(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@radix-ui/number': 1.1.1
       '@radix-ui/primitive': 1.1.3
-      '@radix-ui/react-collection': 1.1.7(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-context': 1.1.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-direction': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.10))(@types/react@19.2.10)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-previous': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-size': 1.1.1(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-collection': 1.1.7(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-context': 1.1.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-direction': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-previous': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-size': 1.1.1(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
-      '@types/react-dom': 19.2.3(@types/react@19.2.10)
+      '@types/react': 19.2.11
+      '@types/react-dom': 19.2.3(@types/react@19.2.11)
 
-  '@radix-ui/react-slot@1.2.3(@types/react@19.2.10)(react@19.2.4)':
+  '@radix-ui/react-slot@1.2.3(@types/react@19.2.11)(react@19.2.4)':
     dependencies:
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  '@radix-ui/react-use-callback-ref@1.1.1(@types/react@19.2.10)(react@19.2.4)':
-    dependencies:
-      react: 19.2.4
-    optionalDependencies:
-      '@types/react': 19.2.10
-
-  '@radix-ui/react-use-controllable-state@1.2.2(@types/react@19.2.10)(react@19.2.4)':
-    dependencies:
-      '@radix-ui/react-use-effect-event': 0.0.2(@types/react@19.2.10)(react@19.2.4)
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      react: 19.2.4
-    optionalDependencies:
-      '@types/react': 19.2.10
-
-  '@radix-ui/react-use-effect-event@0.0.2(@types/react@19.2.10)(react@19.2.4)':
-    dependencies:
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      react: 19.2.4
-    optionalDependencies:
-      '@types/react': 19.2.10
-
-  '@radix-ui/react-use-escape-keydown@1.1.1(@types/react@19.2.10)(react@19.2.4)':
-    dependencies:
-      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.10)(react@19.2.4)
-      react: 19.2.4
-    optionalDependencies:
-      '@types/react': 19.2.10
-
-  '@radix-ui/react-use-layout-effect@1.1.1(@types/react@19.2.10)(react@19.2.4)':
+  '@radix-ui/react-use-callback-ref@1.1.1(@types/react@19.2.11)(react@19.2.4)':
     dependencies:
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  '@radix-ui/react-use-previous@1.1.1(@types/react@19.2.10)(react@19.2.4)':
+  '@radix-ui/react-use-controllable-state@1.2.2(@types/react@19.2.11)(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-use-effect-event': 0.0.2(@types/react@19.2.11)(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      react: 19.2.4
+    optionalDependencies:
+      '@types/react': 19.2.11
+
+  '@radix-ui/react-use-effect-event@0.0.2(@types/react@19.2.11)(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      react: 19.2.4
+    optionalDependencies:
+      '@types/react': 19.2.11
+
+  '@radix-ui/react-use-escape-keydown@1.1.1(@types/react@19.2.11)(react@19.2.4)':
+    dependencies:
+      '@radix-ui/react-use-callback-ref': 1.1.1(@types/react@19.2.11)(react@19.2.4)
+      react: 19.2.4
+    optionalDependencies:
+      '@types/react': 19.2.11
+
+  '@radix-ui/react-use-layout-effect@1.1.1(@types/react@19.2.11)(react@19.2.4)':
     dependencies:
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  '@radix-ui/react-use-rect@1.1.1(@types/react@19.2.10)(react@19.2.4)':
+  '@radix-ui/react-use-previous@1.1.1(@types/react@19.2.11)(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+    optionalDependencies:
+      '@types/react': 19.2.11
+
+  '@radix-ui/react-use-rect@1.1.1(@types/react@19.2.11)(react@19.2.4)':
     dependencies:
       '@radix-ui/rect': 1.1.1
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  '@radix-ui/react-use-size@1.1.1(@types/react@19.2.10)(react@19.2.4)':
+  '@radix-ui/react-use-size@1.1.1(@types/react@19.2.11)(react@19.2.4)':
     dependencies:
-      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.10)(react@19.2.4)
+      '@radix-ui/react-use-layout-effect': 1.1.1(@types/react@19.2.11)(react@19.2.4)
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
   '@radix-ui/rect@1.1.1': {}
 
@@ -11674,11 +11686,11 @@ snapshots:
 
   '@types/lodash@4.17.23': {}
 
-  '@types/react-dom@19.2.3(@types/react@19.2.10)':
+  '@types/react-dom@19.2.3(@types/react@19.2.11)':
     dependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  '@types/react@19.2.10':
+  '@types/react@19.2.11':
     dependencies:
       csstype: 3.2.3
 
@@ -11873,10 +11885,10 @@ snapshots:
     dependencies:
       tslib: 2.6.3
 
-  '@xstate/react@3.2.2(@types/react@19.2.10)(react@19.2.4)(xstate@4.38.3)':
+  '@xstate/react@3.2.2(@types/react@19.2.11)(react@19.2.4)(xstate@4.38.3)':
     dependencies:
       react: 19.2.4
-      use-isomorphic-layout-effect: 1.2.1(@types/react@19.2.10)(react@19.2.4)
+      use-isomorphic-layout-effect: 1.2.1(@types/react@19.2.11)(react@19.2.4)
       use-sync-external-store: 1.6.0(react@19.2.4)
     optionalDependencies:
       xstate: 4.38.3
@@ -13164,7 +13176,7 @@ snapshots:
   graphql-tag@2.12.6(graphql@15.10.1):
     dependencies:
       graphql: 15.10.1
-      tslib: 2.6.3
+      tslib: 2.3.1
 
   graphql-transformer-common@4.34.0:
     dependencies:
@@ -13375,7 +13387,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.3.1
 
   is-map@2.0.3: {}
 
@@ -13438,7 +13450,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.3.1
 
   is-weakmap@2.0.2: {}
 
@@ -13607,7 +13619,7 @@ snapshots:
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.3.1
 
   lru-cache@11.2.5: {}
 
@@ -14030,32 +14042,32 @@ snapshots:
 
   react-refresh@0.18.0: {}
 
-  react-remove-scroll-bar@2.3.8(@types/react@19.2.10)(react@19.2.4):
+  react-remove-scroll-bar@2.3.8(@types/react@19.2.11)(react@19.2.4):
     dependencies:
       react: 19.2.4
-      react-style-singleton: 2.2.3(@types/react@19.2.10)(react@19.2.4)
+      react-style-singleton: 2.2.3(@types/react@19.2.11)(react@19.2.4)
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  react-remove-scroll@2.7.2(@types/react@19.2.10)(react@19.2.4):
+  react-remove-scroll@2.7.2(@types/react@19.2.11)(react@19.2.4):
     dependencies:
       react: 19.2.4
-      react-remove-scroll-bar: 2.3.8(@types/react@19.2.10)(react@19.2.4)
-      react-style-singleton: 2.2.3(@types/react@19.2.10)(react@19.2.4)
+      react-remove-scroll-bar: 2.3.8(@types/react@19.2.11)(react@19.2.4)
+      react-style-singleton: 2.2.3(@types/react@19.2.11)(react@19.2.4)
       tslib: 2.8.1
-      use-callback-ref: 1.3.3(@types/react@19.2.10)(react@19.2.4)
-      use-sidecar: 1.1.3(@types/react@19.2.10)(react@19.2.4)
+      use-callback-ref: 1.3.3(@types/react@19.2.11)(react@19.2.4)
+      use-sidecar: 1.1.3(@types/react@19.2.11)(react@19.2.4)
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  react-style-singleton@2.2.3(@types/react@19.2.10)(react@19.2.4):
+  react-style-singleton@2.2.3(@types/react@19.2.11)(react@19.2.4):
     dependencies:
       get-nonce: 1.0.1
       react: 19.2.4
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
   react@19.2.4: {}
 
@@ -14343,7 +14355,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.3.1
 
   sqlstring@2.3.3: {}
 
@@ -14478,7 +14490,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.3.1
 
   sync-fetch@0.6.0:
     dependencies:
@@ -14522,7 +14534,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.3.1
 
   to-fast-properties@1.0.3: {}
 
@@ -14689,11 +14701,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.3.1
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.3.1
 
   uri-js@4.4.1:
     dependencies:
@@ -14701,26 +14713,26 @@ snapshots:
 
   urlpattern-polyfill@10.1.0: {}
 
-  use-callback-ref@1.3.3(@types/react@19.2.10)(react@19.2.4):
+  use-callback-ref@1.3.3(@types/react@19.2.11)(react@19.2.4):
     dependencies:
       react: 19.2.4
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  use-isomorphic-layout-effect@1.2.1(@types/react@19.2.10)(react@19.2.4):
+  use-isomorphic-layout-effect@1.2.1(@types/react@19.2.11)(react@19.2.4):
     dependencies:
       react: 19.2.4
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
-  use-sidecar@1.1.3(@types/react@19.2.10)(react@19.2.4):
+  use-sidecar@1.1.3(@types/react@19.2.11)(react@19.2.4):
     dependencies:
       detect-node-es: 1.1.0
       react: 19.2.4
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 19.2.10
+      '@types/react': 19.2.11
 
   use-sync-external-store@1.6.0(react@19.2.4):
     dependencies:
