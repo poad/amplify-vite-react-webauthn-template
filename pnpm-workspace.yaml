@@ -19,4 +19,3 @@ overrides:
   glob@>=10.3.7 <=11.0.3: '>=11.1.0'
   lodash@>=4.0.0 <=4.17.22: '>=4.17.23'
   minimatch@<10.2.1: '>=10.2.1'
-  '@eslint/eslintrc>minimatch': ^3.1.2
