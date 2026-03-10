@@ -667,8 +667,8 @@ packages:
       - jsonschema
       - semver
 
-  '@aws-cdk/cloud-assembly-schema@53.3.0':
-    resolution: {integrity: sha512-SvgGfTv+92xiAQKfkyf9/msgf8jSY+vu48oz3LNvm/gSdrXZT57NzGGtRYhYSUTLhn2EOKrzgg2DKojy2jEigA==}
+  '@aws-cdk/cloud-assembly-schema@53.4.0':
+    resolution: {integrity: sha512-UPZi7XA2hOB7OfvMR2kgy7wX1zUu3LGx/eKrykZcFdrwEEny4RvycB0UyqbkzUeIZzuT2t//UpuhPyIGVXqD0w==}
     engines: {node: '>= 18.0.0'}
     bundledDependencies:
       - jsonschema
@@ -6608,9 +6608,9 @@ snapshots:
 
   '@aws-cdk/cdk-assets-lib@1.4.1':
     dependencies:
-      '@aws-cdk/cloud-assembly-api': 2.2.0(@aws-cdk/cloud-assembly-schema@53.3.0)
-      '@aws-cdk/cloud-assembly-schema': 53.3.0
-      '@aws-cdk/cx-api': 2.241.0(@aws-cdk/cloud-assembly-schema@53.3.0)
+      '@aws-cdk/cloud-assembly-api': 2.2.0(@aws-cdk/cloud-assembly-schema@53.4.0)
+      '@aws-cdk/cloud-assembly-schema': 53.4.0
+      '@aws-cdk/cx-api': 2.241.0(@aws-cdk/cloud-assembly-schema@53.4.0)
       '@aws-sdk/client-ecr': 3.1005.0
       '@aws-sdk/client-s3': 3.1005.0
       '@aws-sdk/client-secrets-manager': 3.1005.0
@@ -6631,13 +6631,13 @@ snapshots:
 
   '@aws-cdk/cli-plugin-contract@2.181.0': {}
 
-  '@aws-cdk/cloud-assembly-api@2.2.0(@aws-cdk/cloud-assembly-schema@53.3.0)':
+  '@aws-cdk/cloud-assembly-api@2.2.0(@aws-cdk/cloud-assembly-schema@53.4.0)':
     dependencies:
-      '@aws-cdk/cloud-assembly-schema': 53.3.0
+      '@aws-cdk/cloud-assembly-schema': 53.4.0
 
   '@aws-cdk/cloud-assembly-schema@52.2.0': {}
 
-  '@aws-cdk/cloud-assembly-schema@53.3.0': {}
+  '@aws-cdk/cloud-assembly-schema@53.4.0': {}
 
   '@aws-cdk/cloudformation-diff@2.186.0(@aws-sdk/client-cloudformation@3.1005.0)':
     dependencies:
@@ -6650,9 +6650,9 @@ snapshots:
       string-width: 4.2.3
       table: 6.9.0
 
-  '@aws-cdk/cx-api@2.241.0(@aws-cdk/cloud-assembly-schema@53.3.0)':
+  '@aws-cdk/cx-api@2.241.0(@aws-cdk/cloud-assembly-schema@53.4.0)':
     dependencies:
-      '@aws-cdk/cloud-assembly-schema': 53.3.0
+      '@aws-cdk/cloud-assembly-schema': 53.4.0
 
   '@aws-cdk/service-spec-types@0.0.227':
     dependencies:
@@ -6662,9 +6662,9 @@ snapshots:
     dependencies:
       '@aws-cdk/cdk-assets-lib': 1.4.1
       '@aws-cdk/cli-plugin-contract': 2.181.0
-      '@aws-cdk/cloud-assembly-schema': 53.3.0
+      '@aws-cdk/cloud-assembly-schema': 53.4.0
       '@aws-cdk/cloudformation-diff': 2.186.0(@aws-sdk/client-cloudformation@3.1005.0)
-      '@aws-cdk/cx-api': 2.241.0(@aws-cdk/cloud-assembly-schema@53.3.0)
+      '@aws-cdk/cx-api': 2.241.0(@aws-cdk/cloud-assembly-schema@53.4.0)
       '@aws-sdk/client-appsync': 3.1005.0
       '@aws-sdk/client-cloudcontrol': 3.1005.0
       '@aws-sdk/client-cloudformation': 3.1005.0
@@ -11671,7 +11671,7 @@ snapshots:
   graphql-tag@2.12.6(graphql@15.10.1):
     dependencies:
       graphql: 15.10.1
-      tslib: 2.3.1
+      tslib: 2.6.3
 
   graphql-transformer-common@4.34.0:
     dependencies:
@@ -12114,7 +12114,7 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.8.1
 
   lower-case@2.0.2:
     dependencies:
