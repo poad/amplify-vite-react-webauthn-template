@@ -33,4 +33,4 @@ jobs:
           - args: [--global, aws-cdk]
 
     - name: build
-      run: pnpm -r build
+      run: pnpm build
