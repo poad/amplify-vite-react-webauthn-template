@@ -1,17 +1,26 @@
 packages:
   - .
   - ./amplify
-
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - core-js
-  - esbuild
-  - unrs-resolver
+minimumReleaseAge: 10080 # 7 days in minutes
+minimumReleaseAgeExclude:
+  - lodash@4.18.1
+  - lodash-es@4.18.1
+  - vite@8.0.6
 
 overrides:
-  fast-xml-parser@>=4.0.0-beta.3 <=5.5.5: '>=5.5.6'
+  chokidar: '>=5'
+  eslint-import-resolver-typescript: '>=4'
+  graphql: '>=6'
   handlebars@>=4.0.0 <4.7.9: '>=4.7.9'
   handlebars@>=4.0.0 <=4.7.8: '>=4.7.9'
-  immutable@<4.3.8: '>=4.3.8'
+  handlebars@>=4.6.0 <=4.7.8: '>=4.7.9'
+  immutable@<3.8.3: '>=3.8.3'
+  lodash@<=4.17.23: '>=4.18.0'
+  lodash@>=4.0.0 <=4.17.23: '>=4.18.0'
   minimatch@>=10.0.0 <10.2.1: '>=10.2.1'
   minimatch@>=10.0.0 <10.2.3: '>=10.2.3'
+  semver: '>=7'
+  ua-parser-js: '>=2'
+  vite@>=8.0.0 <=8.0.4: '>=8.0.5'
+
+trustPolicy: no-downgrade
