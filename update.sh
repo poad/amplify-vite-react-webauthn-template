@@ -21,9 +21,8 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-npx -y pnpm@latest self-update && pnpm install -r && pnpm up -r && pnpm audit --fix && pnpm up -r && pnpm lint && pnpm build && pnpm install -r --no-frozen-lockfile
-result=$?
-if [ $result -ne 0 ]; then
+
+if ! (npx -y pnpm@latest self-update && pnpm install -r && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm lint && pnpm build && pnpm install -r --no-frozen-lockfile); then
   cd "${CUR}" || exit
   exit $result
 fi
