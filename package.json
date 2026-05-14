@@ -14,8 +14,8 @@
     "@aws-amplify/ui-react": "^6.15.3",
     "@eslint/compat": "^2.0.5",
     "aws-amplify": "^6.17.0",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.22.0",
@@ -27,8 +27,8 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
-    "aws-cdk": "^2.1120.0",
-    "aws-cdk-lib": "^2.252.0",
+    "aws-cdk": "^2.1121.0",
+    "aws-cdk-lib": "^2.253.0",
     "constructs": "^10.6.0",
     "esbuild": "^0.28.0",
     "eslint": "^10.3.0",
@@ -41,11 +41,11 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
     "jiti": "^2.7.0",
-    "pnpm": "^10.33.3",
+    "pnpm": "^10.33.4",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.10"
+    "vite": "^8.0.11"
   },
-  "packageManager": "pnpm@11.1.1"
+  "packageManager": "pnpm@11.1.2"
 }
