@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import { Amplify } from 'aws-amplify';
 import outputs from '../amplify_outputs.json';
@@ -11,11 +11,11 @@ Amplify.configure(outputs);
 
 const root = document.getElementById('root');
 if (root) {
-  ReactDOM.createRoot(root).render(
-    <React.StrictMode>
+  createRoot(root).render(
+    <StrictMode>
       <Authenticator.Provider>
         <App />
       </Authenticator.Provider>
-    </React.StrictMode>,
+    </StrictMode>,
   );
 }
