@@ -10,10 +10,7 @@ allowBuilds:
 
 minimumReleaseAge: 10080 # 7 days in minutes
 minimumReleaseAgeExclude:
-  - pnpm@11.6.0
-  - handlebars@4.7.9
-  - lodash@4.17.24
-  - immutable@3.8.3
+  - pnpm@11.7.0
   - esbuild@0.28.1
   - '@esbuild/aix-ppc64@0.28.1'
   - '@esbuild/android-arm64@0.28.1'
