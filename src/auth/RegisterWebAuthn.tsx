@@ -1,22 +1,22 @@
+import { Alert, Button } from '@aws-amplify/ui-react';
 import { associateWebAuthnCredential } from 'aws-amplify/auth';
 import { useState } from 'react';
 import { Show } from '../flow';
-import { Alert, Button } from '@aws-amplify/ui-react';
 
 /**
-* PassKey (WebAuthn)を登録するためのコンポーネント
-*
-* WebAuthn認証情報をユーザーのAWS Cognitoアカウントに関連付けます。
-* 登録に成功すると、ユーザーは次回以降PassKeyを使用してサインインできます。
-*
-* が！ Cognito の設定とデプロイ先のフロントエンドの設定が合わないため、ドメインが異なるような内容のエラーが発生して期待通りには動作していません！
-*
-* @component
-* @example
-* ```tsx
-* <RegisterWebAuthn />
-* ```
-*/
+ * PassKey (WebAuthn)を登録するためのコンポーネント
+ *
+ * WebAuthn認証情報をユーザーのAWS Cognitoアカウントに関連付けます。
+ * 登録に成功すると、ユーザーは次回以降PassKeyを使用してサインインできます。
+ *
+ * が！ Cognito の設定とデプロイ先のフロントエンドの設定が合わないため、ドメインが異なるような内容のエラーが発生して期待通りには動作していません！
+ *
+ * @component
+ * @example
+ * ```tsx
+ * <RegisterWebAuthn />
+ * ```
+ */
 export function RegisterWebAuthn() {
   // エラー状態の管理
   const [error, setError] = useState<{ message?: string } | undefined>();
@@ -38,7 +38,7 @@ export function RegisterWebAuthn() {
     <>
       <Button onClick={registerPassKey}>Register PassKey</Button>
       <Show when={error}>
-        <Alert variation="error">{error?.message}</Alert>
+        <Alert variation='error'>{error?.message}</Alert>
       </Show>
     </>
   );

@@ -19,14 +19,10 @@ import { Show } from '../flow';
  * ```
  */
 export function SignOutButton(props: { onSignOut?: () => void }): JSX.Element {
-  const {
-    authStatus,
-    signOut,
-  } = useAuthenticator((context) => [
+  const { authStatus, signOut } = useAuthenticator((context) => [
     context.authStatus,
     context.signOut,
   ]);
-
 
   return (
     <Show when={authStatus === 'authenticated'} fallback={<></>}>

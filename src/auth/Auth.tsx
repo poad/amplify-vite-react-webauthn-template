@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { SignOutButton } from './SignOutButton';
 import { Tabs, Card, Flex, useAuthenticator } from '@aws-amplify/ui-react';
-import { SignIn } from './SignIn';
-import { SignUp } from './SignUp';
+import { useState } from 'react';
 import { Show } from '../flow';
 import { RegisterWebAuthn } from './RegisterWebAuthn';
+import { SignIn } from './SignIn';
+import { SignOutButton } from './SignOutButton';
+import { SignUp } from './SignUp';
 
 /**
  * Authコンポーネント - AWS Amplifyを使用した認証UI
@@ -25,23 +25,24 @@ import { RegisterWebAuthn } from './RegisterWebAuthn';
  * ```
  */
 export function Auth() {
-  const {
-    authStatus,
-  } = useAuthenticator((context) => [
-    context.authStatus,
-  ]);
+  const { authStatus } = useAuthenticator((context) => [context.authStatus]);
   const [tab, setTab] = useState('signin');
 
   return (
-    <Show when={authStatus !== 'authenticated'} fallback={
-      <Flex direction="column" gap="small">
-        <SignOutButton />
-        <RegisterWebAuthn />
-      </Flex>
-    }>
-      <Card style={{
-        borderRadius: '10px',
-      }}>
+    <Show
+      when={authStatus !== 'authenticated'}
+      fallback={
+        <Flex direction='column' gap='small'>
+          <SignOutButton />
+          <RegisterWebAuthn />
+        </Flex>
+      }
+    >
+      <Card
+        style={{
+          borderRadius: '10px',
+        }}
+      >
         <Tabs
           value={tab}
           onValueChange={(tab) => setTab(tab)}
@@ -54,9 +55,7 @@ export function Auth() {
             {
               label: 'Sign Up',
               value: 'signup',
-              content: (
-                <SignUp onSignedUp={() => setTab('1')} />
-              ),
+              content: <SignUp onSignedUp={() => setTab('1')} />,
             },
           ]}
         />

@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: daily
       timezone: Asia/Tokyo
-      time: "12:00"
+      time: '12:00'
     allow:
       - dependency-type: all
     cooldown:
@@ -16,14 +16,14 @@ updates:
     groups:
       actions:
         patterns:
-          - "*"
+          - '*'
 
   - package-ecosystem: npm
     directory: '/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo
-      time: "12:00"
+      time: '12:00'
     allow:
       - dependency-type: all
     cooldown:
@@ -34,4 +34,4 @@ updates:
     groups:
       npm:
         patterns:
-          - "*"
+          - '*'

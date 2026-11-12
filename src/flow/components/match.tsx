@@ -4,7 +4,7 @@ import { JSX } from 'react';
  * Matchコンポーネントは、条件に基づいて子要素を表示するためのコンポーネントです。
  *
  * example:
-  * ```tsx
+ * ```tsx
  * <Switch fallback={<div>Not found</div>}>
  *  <Match when={true}><div>First</div></Match>
  *  <Match when={false}><div>Second</div></Match>

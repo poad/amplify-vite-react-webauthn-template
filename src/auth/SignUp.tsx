@@ -1,4 +1,12 @@
-import { View, Flex, Label, Input, Button, Text, Alert } from '@aws-amplify/ui-react';
+import {
+  View,
+  Flex,
+  Label,
+  Input,
+  Button,
+  Text,
+  Alert,
+} from '@aws-amplify/ui-react';
 import { confirmSignUp, signUp } from 'aws-amplify/auth';
 import { JSX, useState } from 'react';
 import { Match, Show, Switch } from '../flow';
@@ -89,65 +97,59 @@ export function SignUp(props: {
 
   // サインアップ完了時の成功メッセージ表示
   if (signUpNextStep === 'DONE') {
-    return <Alert variation="success">Success</Alert>;
+    return <Alert variation='success'>Success</Alert>;
   }
 
   return (
     <View>
-      <Flex direction="column" gap="small">
-        <Switch fallback={
-          <>
-            <Label htmlFor="code" className="pr-1">
-              Confirmation Code
-              <Text as="span" fontSize="small" color="font.error">
-                {' '}
-                (required)
-              </Text>
-            </Label>
-            <Input
-              id="code"
-              type="text"
-              value={code}
-              onInput={(e) => setCode(e.currentTarget.value)}
-              isRequired
-            />
-            <Button
-              onClick={handleClickSignUp}
-            >
-              Create Account
-            </Button>
-          </>
-        }>
-          <Match when={signUpNextStep === 'DONE'}>
-            <Alert variation="success">Success</Alert>
-          </Match>
-          <Match when={signUpNextStep !== 'CONFIRM_SIGN_UP'}>
+      <Flex direction='column' gap='small'>
+        <Switch
+          fallback={
             <>
-              <Label htmlFor="email" className="pr-1">
-                Email
-                <Text as="span" fontSize="small" color="font.error">
+              <Label htmlFor='code' className='pr-1'>
+                Confirmation Code
+                <Text as='span' fontSize='small' color='font.error'>
                   {' '}
                   (required)
                 </Text>
               </Label>
               <Input
-                id="email"
-                type="email"
+                id='code'
+                type='text'
+                value={code}
+                onInput={(e) => setCode(e.currentTarget.value)}
+                isRequired
+              />
+              <Button onClick={handleClickSignUp}>Create Account</Button>
+            </>
+          }
+        >
+          <Match when={signUpNextStep === 'DONE'}>
+            <Alert variation='success'>Success</Alert>
+          </Match>
+          <Match when={signUpNextStep !== 'CONFIRM_SIGN_UP'}>
+            <>
+              <Label htmlFor='email' className='pr-1'>
+                Email
+                <Text as='span' fontSize='small' color='font.error'>
+                  {' '}
+                  (required)
+                </Text>
+              </Label>
+              <Input
+                id='email'
+                type='email'
                 value={email}
                 onChange={(e) => setEmail(e.currentTarget.value)}
                 isRequired
               />
-              <Button
-                onClick={handleClickNext}
-              >
-                Next
-              </Button>
+              <Button onClick={handleClickNext}>Next</Button>
             </>
           </Match>
         </Switch>
 
         <Show when={error}>
-          <Alert variation="error">{error?.message}</Alert>
+          <Alert variation='error'>{error?.message}</Alert>
         </Show>
       </Flex>
     </View>

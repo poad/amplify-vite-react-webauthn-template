@@ -17,11 +17,7 @@ export function Show<T>(props: {
 }): JSX.Element {
   // 条件が真の場合、子要素を表示
   if (props.when) {
-    return (
-      <>
-        {props.children}
-      </>
-    );
+    return <>{props.children}</>;
   }
   // 条件が偽の場合、フォールバック要素を表示
   return <>{props.fallback}</>;

@@ -9,7 +9,12 @@ import {
   RadioGroupField,
   Radio,
 } from '@aws-amplify/ui-react';
-import { confirmSignIn, ConfirmSignInOutput, signIn, SignInOutput } from 'aws-amplify/auth';
+import {
+  confirmSignIn,
+  ConfirmSignInOutput,
+  signIn,
+  SignInOutput,
+} from 'aws-amplify/auth';
 import { JSX, useState } from 'react';
 import { Switch, Match, Show } from '../flow';
 import './SignIn.css';
@@ -41,13 +46,13 @@ import './SignIn.css';
  */
 export function SignIn(props: {
   onSignedIn?: (signInResult: ConfirmSignInOutput) => void;
-  onError?: (error: Error) => void
+  onError?: (error: Error) => void;
 }): JSX.Element {
   // フォームの状態管理
   const [email, setEmail] = useState('');
   const [otp, setOtp] = useState('');
   const [error, setError] = useState<Error | undefined>();
-  const [flow, setFlow] = useState('email');  // 認証フローの種類（'email' または 'passkey'）
+  const [flow, setFlow] = useState('email'); // 認証フローの種類（'email' または 'passkey'）
   const [signResult, setSignResult] = useState<SignInOutput | undefined>();
 
   /**
@@ -76,10 +81,13 @@ export function SignIn(props: {
       setSignResult(result);
 
       if (
-        result.nextStep.signInStep === 'CONTINUE_SIGN_IN_WITH_FIRST_FACTOR_SELECTION'
+        result.nextStep.signInStep ===
+        'CONTINUE_SIGN_IN_WITH_FIRST_FACTOR_SELECTION'
       ) {
         // 利用可能な認証方式の一覧を表示
-        console.log(`Available Challenges: ${result.nextStep.availableChallenges}`);
+        console.log(
+          `Available Challenges: ${result.nextStep.availableChallenges}`,
+        );
 
         // ユーザーの選択に基づいて認証を続行
         const { nextStep: nextConfirmSignInStep } = await confirmSignIn({
@@ -127,70 +135,68 @@ export function SignIn(props: {
 
   return (
     <View>
-      <Flex direction="column" gap="small">
-        <Switch fallback={
-          <>
-            <Label htmlFor="email" className="pr-1">
-              Email
-              <Text as="span" fontSize="small" color="font.error">
-                {' '}
-                (required)
-              </Text>
-            </Label>
-            <Input
-              id="email"
-              type="email"
-              value={email}
-              onInput={(e) => setEmail(e.currentTarget.value)}
-              isRequired
-            />
-            <RadioGroupField
-              legend="Auth Type"
-              name="type"
-              direction="row"
-              value={flow}
-              onChange={(e) => setFlow(e.target.value)}
-            >
-              <Radio value="email">Email</Radio>
-              <Radio value="passkey">PassKey</Radio>
-
-            </RadioGroupField>
-            <Button
-              onClick={handleClickNext}
-            >
-              Next
-            </Button>
-          </>
-        }>
-          <Match when={signResult?.nextStep.signInStep === 'DONE'}>
-            <></>
-          </Match>
-          <Match when={signResult?.nextStep.signInStep === 'CONFIRM_SIGN_IN_WITH_EMAIL_CODE'}>
+      <Flex direction='column' gap='small'>
+        <Switch
+          fallback={
             <>
-              <Label htmlFor="otp" className="pr-1">
-                One Time Password
-                <Text as="span" fontSize="small" color="font.error">
+              <Label htmlFor='email' className='pr-1'>
+                Email
+                <Text as='span' fontSize='small' color='font.error'>
                   {' '}
                   (required)
                 </Text>
               </Label>
               <Input
-                id="otp"
-                type="text"
+                id='email'
+                type='email'
+                value={email}
+                onInput={(e) => setEmail(e.currentTarget.value)}
+                isRequired
+              />
+              <RadioGroupField
+                legend='Auth Type'
+                name='type'
+                direction='row'
+                value={flow}
+                onChange={(e) => setFlow(e.target.value)}
+              >
+                <Radio value='email'>Email</Radio>
+                <Radio value='passkey'>PassKey</Radio>
+              </RadioGroupField>
+              <Button onClick={handleClickNext}>Next</Button>
+            </>
+          }
+        >
+          <Match when={signResult?.nextStep.signInStep === 'DONE'}>
+            <></>
+          </Match>
+          <Match
+            when={
+              signResult?.nextStep.signInStep ===
+              'CONFIRM_SIGN_IN_WITH_EMAIL_CODE'
+            }
+          >
+            <>
+              <Label htmlFor='otp' className='pr-1'>
+                One Time Password
+                <Text as='span' fontSize='small' color='font.error'>
+                  {' '}
+                  (required)
+                </Text>
+              </Label>
+              <Input
+                id='otp'
+                type='text'
                 value={otp}
                 onInput={(e) => setOtp(e.currentTarget.value)}
                 isRequired
               />
-              <Button
-                onClick={handleClickSignIn}
-              >
-                Sign In
-              </Button>
+              <Button onClick={handleClickSignIn}>Sign In</Button>
             </>
           </Match>
         </Switch>
         <Show when={error}>
-          <Alert variation="error">{error?.message}</Alert>
+          <Alert variation='error'>{error?.message}</Alert>
         </Show>
       </Flex>
     </View>

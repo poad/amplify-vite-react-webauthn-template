@@ -1,6 +1,6 @@
 import { defineBackend } from '@aws-amplify/backend';
-import { auth } from './auth/resource';
 import { CfnUserPoolDomain } from 'aws-cdk-lib/aws-cognito';
+import { auth } from './auth/resource';
 
 const backend = defineBackend({
   auth,
@@ -15,4 +15,7 @@ new CfnUserPoolDomain(backend.stack, 'Domain', {
   domain: 'amplify-webauthn-example',
 });
 
-cfnUserPoolClient.explicitAuthFlows = ['ALLOW_USER_AUTH', 'ALLOW_REFRESH_TOKEN_AUTH'];
+cfnUserPoolClient.explicitAuthFlows = [
+  'ALLOW_USER_AUTH',
+  'ALLOW_REFRESH_TOKEN_AUTH',
+];

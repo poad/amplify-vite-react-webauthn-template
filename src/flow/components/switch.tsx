@@ -22,7 +22,9 @@ export function Switch(props: {
   children: JSX.Element | JSX.Element[];
 }): JSX.Element {
   // 子要素が配列でない場合、配列に変換
-  const children: JSX.Element[] = Array.isArray(props.children) ? props.children : [props.children];
+  const children: JSX.Element[] = Array.isArray(props.children)
+    ? props.children
+    : [props.children];
 
   // 各子要素をチェックし、条件が真のものを表示
   for (const child of children) {
